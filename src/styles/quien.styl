@@ -1,0 +1,162 @@
+.quien
+  width 100%
+  height auto
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+.quien-top,.quien-sub
+  width 60%
+  height auto
+
+.quien-top
+  padding 3vw 0 2vw 0
+
+span.top-title
+  font-size 32px
+
+h2
+    position:relative
+    overflow:hidden
+
+h2:after
+    content:""
+    top:48%
+    width:100%
+    margin-left:10px
+    height:5px
+    position:absolute
+    background-image: -o-linear-gradient(right, #AED48A 0%, #30BFBF 100%)
+    background-image: -moz-linear-gradient(right, #AED48A 0%, #30BFBF 100%)
+    background-image: -webkit-linear-gradient(right, #AED48A 0%, #30BFBF 100%)
+    background-image: -ms-linear-gradient(right, #AED48A 0%, #30BFBF 100%)
+    background-image: linear-gradient(to right, #AED48A 0%, #30BFBF 100%)
+
+
+/* profile */
+
+.profile
+  width 100%
+  margin-left .5%
+  height auto
+  display flex
+  flex-wrap nowrap
+  flex-direction column
+  justify-content center
+  align-items center
+
+.profile-img
+  width 100%
+  height auto
+
+.profile-img img
+  width 100%
+  height auto
+
+.name
+  width 100%
+  height auto
+  padding 2vw 0 2vw 0
+  text-align center
+  background-color rgb(230,230,230)
+
+.profiles-content
+  width 60%
+  height auto
+  text-align left
+  font-size 16px
+  list-style-type none
+  padding 0
+
+.profile
+  display inline-block
+  width 33%
+  margin-top 5vw
+  text-align center
+  cursor pointer
+
+.profiles-content .services-elem
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+.profile-img:hover
+  opacity .8
+
+.profiles-content:after
+  content: ''
+  display: inline-block
+  width: 100%
+
+.name-info
+  position absolute
+  line-height 22vw
+  width 13.8%
+  background-color black
+  opacity 0
+  color #fff
+  z-index 8
+  font-size 24px
+
+.name-info:hover
+  opacity 0.5
+  z-index 8
+
+  /* -- POP UP -- */
+
+.pop-up-serv
+  position absolute
+  width 60%
+  height 10vw
+  background-color black
+  opacity .8
+  bottom 0
+  z-index 9
+
+  /* -- MEDIA QUERIES  -- */
+
+/* 3 COL */
+@media (max-width 1920px)
+  .profile
+    width 23%
+    margin-bottom 2%
+
+@media (min-width 1680px)
+  h2
+    font-size 32px
+
+  span.top-subtitle
+    font-size 26px
+
+  .name-info
+    font-size 36px
+
+
+/* 2 COL */
+@media (max-width: 768px)
+ .profile
+   width: 45%;
+   margin-top 2vw
+   margin-right 2vw
+
+  .name-info
+    width 27%
+    line-height 43vw
+    font-size 20px
+
+/* logo footer  */
+
+.logo-bottom
+  width 100%
+  height auto
+  text-align center
+  padding 3vw 0 1vw 0
+
+.logo-bottom img
+  width 20%
+
+@media (max-width 768px)
+  .quien-top,.quien-sub
+    width 80%

@@ -1,0 +1,81 @@
+.services-opts
+  width 100%
+  height auto
+
+.services-elem
+  height auto
+
+.services-elem img
+  width 40%
+  margin-bottom .5vw
+
+#Grid
+  text-align left
+  font-size 16px
+  list-style-type none
+  padding 0
+
+#Grid li
+  display inline-block
+  width 33%
+  margin-top 5vw
+  text-align center
+
+#Grid li .services-elem
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+#Grid:after
+  content: ''
+  display: inline-block
+  width: 100%
+  /* -- POP UP -- */
+
+.pop-up-serv
+  position absolute
+  width 60%
+  height 10vw
+  background-color black
+  opacity .8
+  bottom 0
+  z-index 9
+
+  /* -- MEDIA QUERIES  -- */
+
+/* 3 COL */
+@media (max-width: 1920px)
+  #Grid li
+    width: 32%;
+    margin-bottom: 2%;
+
+/* 2 COL */
+@media (max-width: 768px)
+ #Grid li
+   width: 48%;
+   margin-top 10vw
+
+ #Grid li .services-elem
+   margin-top 5vw
+
+/* SINGLE COL */
+@media (max-width: 320px){
+  #Grid li{
+    width: 60%;
+    margin: 0 20% 5% 20%;
+  }
+
+}
+
+@media (max-width: 480px){
+  span.opt-list{
+    font-size:12px;
+  }
+}
+
+@media (max-width: 320px){
+  span.opt-list{
+    font-size:8px;
+  }
+}

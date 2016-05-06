@@ -1,0 +1,74 @@
+.menu-opt
+  width 100%
+  height auto
+  text-align center
+  padding 3vw 0 3vw 0
+
+$circle = 20px
+
+.circle
+  position relative
+  display inline-block
+  width 14.5%
+  height 0
+  padding 7% 0
+  border-radius 50%
+  border $circle solid rgb(184,215,136)
+  -webkit-box-shadow 0 4px 0 0 rgba(0, 0, 0, 0.1)
+  box-shadow 0 4px 0 0 rgba(0, 0, 0, 0.1)
+  text-shadow 0 4px 0 rgba(0, 0, 0, 0.1)
+  margin 3% 1% 3% 1%
+  background #fff
+  color black
+  font-size 32px
+  line-height 1px
+  text-align center
+
+.green-circle
+  border $circle solid rgb(184,215,136)
+
+.pink-circle
+  border $circle solid rgb(222,212,202)
+
+.blue-circle
+  border $circle solid rgb(47,193,194)
+
+.gradient-circle
+  // border 30px solid -moz-linear-gradient(0deg, rgba(173,212,136,1) 0%, rgba(173,212,136,1) 2%, rgba(48,191,191,1) 100%);
+
+@media (min-width 1680px)
+  .circle
+    font-size 42px
+
+@media (max-width 1280px)
+  .circle
+    font-size 24px
+
+@media (max-width 1024px)
+  .circle
+    font-size 18px
+
+@media (max-width 768px)
+  .circle
+    width 32.5%
+    padding 16.5% 0
+    font-size 24px
+
+  .circle.pink-circle,.circle.gradient-circle
+    margin-left 5%
+
+
+@media (max-width 480px)
+  .circle
+    font-size 20px
+
+// One-Column //
+ @media (max-width 320px)
+     .circle
+       font-size 17px
+//   .circle
+//     width 42.5%
+//     padding 20.5% 0
+//
+//   .circle.pink-circle,.circle.gradient-circle
+//     margin-left 0%

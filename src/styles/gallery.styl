@@ -1,0 +1,196 @@
+.galeria-wrapper
+  width 100%
+  height auto
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+.wrapper
+  width 100%
+  height auto
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+
+
+ul.grid-parent
+  font-size  0
+  list-style  none
+  width  60%
+  padding 0
+  margin 0 auto
+
+ul.grid-parent li
+  display  inline-block
+  width  33.3%
+
+ul.grid-parent li img
+  opacity  1
+  width  99%
+
+ul.grid-parent li.feature
+  float  left
+  width  66.6%
+
+.container
+  width 100%
+  margin  0 auto
+  height  22vw
+
+.section
+  width 100%
+  position  absolute
+  opacity  0
+  transition  opacity 1s
+
+.active
+  opacity  1
+
+.prev,.next
+  position absolute
+  color rgb(47,193,193)
+  cursor pointer
+  font-size 60px
+  z-index 9
+  margin-top 6vw
+
+.next:hover
+  color black
+  transition .5s
+.prev:hover
+  color black
+  transition .5s
+
+.next
+  margin-left -11vw
+
+.prev
+  margin-left 10vw
+
+li.two
+  margin-bottom .5%
+
+
+/*****  Slider two  ******/
+
+.galeria-wrapper-b
+  width 100%
+  height auto
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+.wrapper-b
+  width 100%
+  height auto
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+  margin-bottom 3vw
+
+
+ul.grid-parent-b
+  font-size  0
+  list-style  none
+  width  60%
+  padding 0
+  margin 0 auto
+
+ul.grid-parent-b li
+  display  inline-block
+  width  33.3%
+
+ul.grid-parent-b li img
+  opacity  1
+  width  99%
+
+ul.grid-parent-b li.feature-b
+  float  left
+  width  33.3%
+
+.container-b
+  width 100%
+  margin  0 auto
+  height  22vw
+
+.section-b
+  width 100%
+  position  absolute
+  opacity  0
+  transition  opacity 1s
+
+.active-b
+  opacity  1
+
+.prev-b,.next-b
+  position absolute
+  color rgb(47,193,193)
+  cursor pointer
+  font-size 60px
+  z-index 9
+  margin-top 6vw
+
+.next-b:hover
+  color black
+  transition .5s
+.prev-b:hover
+  color black
+  transition .5s
+
+.next-b
+  margin-left -11vw
+
+.prev-b
+  margin-left 10vw
+
+li.two-b
+  margin-bottom .5%
+
+.next,.prev,.next-b,.prev-b
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+
+/* Firefox CSS */
+@-moz-document url-prefix()
+  .prev,.next
+    margin-top -5vw
+  .prev-b,.next-b
+    margin-top -5vw
+
+/********* RESPONSIVE MEDIA QUERIES ***********/
+
+@media (max-width: 768px)
+/* media queries responsive slide uno */
+  ul.grid-parent,ul.grid-parent-b
+    width 80%
+  .next,.next-b
+    margin-right 0
+    margin-left -7vw
+  .prev,.prev-b
+    margin-left 2.5vw
+    margin-right 0vw
+  .next,.prev,.next-b,.prev-b
+    margin-top 8vw
+  .wrapper-b
+    margin-bottom 10vw
+
+@media (max-width: 480px)
+  .next-b,.prev-b,.next,.prev
+    font-size 42px
+
+@media (max-width: 320px)
+  .next-b,.prev-b,.next,.prev
+    font-size 32px
+  .prev,.prev-b
+    margin-left 2vw
+  .next,.next-b
+    margin-right 0
+    margin-left -8vw

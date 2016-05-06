@@ -1,0 +1,98 @@
+
+.events-content
+  font-size 16px
+  padding 0
+  width 70%
+  text-align center
+
+.event-elem
+  display inline-block
+  width 30%
+  margin 3vw .5vw 3vw 0
+  background-color rgb(242,242,242)
+
+.event-title
+  text-align left
+  margin 0 1vw 0 1vw
+  padding 1vw 0 1vw 0
+  border-bottom solid 1px rgb(203,203,203)
+
+.event-info
+  text-align left
+  display inline-block
+  width 40%
+  margin-top 1vw
+  padding-bottom 1vw
+
+.ver-mas
+  float right
+  background-color rgb(47,193,194)
+  color #fff
+  margin 5vw 2vw 1vw 0
+  padding 15px .5px 15px .5px
+  width 30%
+  cursor pointer
+  display inline-block
+
+.ver-mas:hover
+  opacity .8
+
+.event-img img
+  width 100%
+
+.events-content:after
+  display inline-block
+  width 100%
+
+  /* -- MEDIA QUERIES  -- */
+
+/* 3 COL */
+@media (max-width 1920px)
+  .event-elem
+    width 32%
+
+@media (min-width 1680px)
+  .event-title span
+    font-size 24px
+
+  .event-info span
+    font-size 22px
+
+@media (max-width: 1024px)
+  .ver-mas
+    width 36%
+
+/* SINGLE COL */
+@media (max-width: 768px)
+  .event-elem
+    width 75%
+
+  .ver-mas
+    margin 7vw 2vw 3vw 0
+    padding 1.5vw .5vw 1.5vw .5vw
+    width 24%
+
+@media (max-width: 640px)
+  .ver-mas
+    margin 7vw 3vw 3vw 0
+    width 30%
+
+  .event-elem
+    width 80%
+
+@media (max-width: 480px)
+  .event-elem
+    width 90%
+
+  .ver-mas
+    width 33%
+    margin 12vw 3vw 5vw 0
+
+@media (max-width: 320px)
+  .event-elem
+    width 100%
+
+  .ver-mas
+    margin 25vw 3vw 5vw 0
+    width 40%
+    padding 3vw .5vw 3vw .5vw
