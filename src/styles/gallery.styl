@@ -156,7 +156,7 @@ li.two-b
   -khtml-user-select: none;    /* Konqueror */
   -moz-user-select: none;      /* Firefox */
   -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently
+  user-select: none;           /* Non-prefixed version, currently */
 
 /* Firefox CSS */
 @-moz-document url-prefix()
@@ -186,11 +186,15 @@ li.two-b
   .next-b,.prev-b,.next,.prev
     font-size 42px
 
+  .prev, .prev-b
+    margin-left 0
+    margin-right 0
+
 @media (max-width: 320px)
   .next-b,.prev-b,.next,.prev
     font-size 32px
   .prev,.prev-b
-    margin-left 2vw
+    margin-left 1vw
   .next,.next-b
     margin-right 0
     margin-left -8vw

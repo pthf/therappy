@@ -13,6 +13,12 @@
 .quien-top
   padding 3vw 0 2vw 0
 
+.quien-top.pop-up-title
+  width 100%
+
+.pop-up-title
+  padding 4vw 0 2vw 0
+
 span.top-title
   font-size 32px
 
@@ -54,12 +60,32 @@ h2:after
   width 100%
   height auto
 
+// .profile-img:hover
+//   opacity .8
+
+.popup-profile
+  width 85%
+  height auto
+
+.profile-img.popup-profile
+  opacity 1
+  cursor default
+
+.popup-profile img
+  width 85%
+  height auto
+
+
 .name
   width 100%
   height auto
   padding 2vw 0 2vw 0
   text-align center
   background-color rgb(230,230,230)
+
+.name-pop-up
+  width 85%
+  cursor default
 
 .profiles-content
   width 60%
@@ -82,9 +108,6 @@ h2:after
   justify-content center
   align-items center
 
-.profile-img:hover
-  opacity .8
-
 .profiles-content:after
   content: ''
   display: inline-block
@@ -97,12 +120,12 @@ h2:after
   background-color black
   opacity 0
   color #fff
-  z-index 8
+  z-index 2
   font-size 24px
 
 .name-info:hover
   opacity 0.5
-  z-index 8
+  z-index 1
 
   /* -- POP UP -- */
 
@@ -115,15 +138,31 @@ h2:after
   bottom 0
   z-index 9
 
+  /* logo footer  */
+.logo-bottom
+  width 100%
+  height auto
+  text-align center
+  padding 3vw 0 1vw 0
+
+.logo-bottom img
+  width 20%
+
   /* -- MEDIA QUERIES  -- */
 
 /* 3 COL */
+
+@media (min-width 1920px)
+  .profile
+    width 23%
+    margin-bottom 2%
+
 @media (max-width 1920px)
   .profile
     width 23%
     margin-bottom 2%
 
-@media (min-width 1680px)
+@media (max-width 1680px)
   h2
     font-size 32px
 
@@ -132,6 +171,17 @@ h2:after
 
   .name-info
     font-size 36px
+
+@media (max-width 1024px)
+  .profiles-content
+    width 75%
+
+  .quien-sub, .quien-top
+    width 75%
+
+  .name-info
+    line-height: 27.5vw;
+    width: 17.3%;
 
 
 /* 2 COL */
@@ -142,21 +192,36 @@ h2:after
    margin-right 2vw
 
   .name-info
-    width 27%
-    line-height 43vw
+    width 34%
+    line-height 54vw
     font-size 20px
 
-/* logo footer  */
-
-.logo-bottom
-  width 100%
-  height auto
-  text-align center
-  padding 3vw 0 1vw 0
-
-.logo-bottom img
-  width 20%
-
-@media (max-width 768px)
   .quien-top,.quien-sub
     width 80%
+
+  .quien-top.pop-up-title
+    width 100%
+
+  .pop-up-title
+    padding-top 0
+
+  .quien-top.pop-up-title h2
+      font-size 18px
+
+  span.top-subtitle
+      font-size 16px
+
+@media(max-width: 480px)
+  .profile.profile-popup
+      width 35%
+      margin 0 auto
+      margin-top 3vw
+
+  .name-pop-up
+      width 100%
+
+  .popup-profile, .popup-profile img
+      width 100%
+
+  .quien-top.pop-up-title h2
+      font-size 16px

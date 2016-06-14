@@ -25,6 +25,8 @@
   background-image: -ms-linear-gradient(right, #AED48A 0%, #30BFBF 100%);
   background-image: linear-gradient(to right, #AED48A 0%, #30BFBF 100%);
 
+.info-cap
+  color black
 
 span.arrow-cap
   padding 2vw 1vw 2vw 0
@@ -43,7 +45,7 @@ span.no-bold
 
 .cap-content
   background-image none
-  background-color black
+  background-color rgb(230,230,230)
   display block
   box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.75);
 
@@ -53,15 +55,21 @@ p.info-cap
   margin 3% 5% 0 5%
 
 div.close-info
-  background-color white
-  color blue
+  background-image: -o-linear-gradient(right, #AED48A 0%, #30BFBF 100%);
+  background-image: -moz-linear-gradient(right, #AED48A 0%, #30BFBF 100%);
+  background-image: -webkit-linear-gradient(right, #AED48A 0%, #30BFBF 100%);
+  background-image: -ms-linear-gradient(right, #AED48A 0%, #30BFBF 100%);
+  background-image: linear-gradient(to right, #AED48A 0%, #30BFBF 100%);
   padding 1vw 2vw 1vw 2vw
   margin 3vw
   margin-top 1vw
   width 12%
   text-align center
-  color rgb(47,193,193)
+  color white
   float right
+
+div.close-info:hover
+  opacity .8
 
 @media (min-width 1680px)
   span.title-cap
@@ -71,7 +79,7 @@ div.close-info
     font-size 28px
 
   div.close-info
-    font-size 26px
+    font-size 22px
 
 @media (max-width 1280px)
   div.close-info

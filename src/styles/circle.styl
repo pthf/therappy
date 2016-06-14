@@ -13,10 +13,9 @@ $circle = 20px
   height 0
   padding 7% 0
   border-radius 50%
-  border $circle solid rgb(184,215,136)
-  -webkit-box-shadow 0 4px 0 0 rgba(0, 0, 0, 0.1)
-  box-shadow 0 4px 0 0 rgba(0, 0, 0, 0.1)
-  text-shadow 0 4px 0 rgba(0, 0, 0, 0.1)
+  // -webkit-box-shadow 0 4px 0 0 rgba(0, 0, 0, 0.1)
+  // box-shadow 0 4px 0 0 rgba(0, 0, 0, 0.1)
+  // text-shadow 0 4px 0 rgba(0, 0, 0, 0.1)
   margin 3% 1% 3% 1%
   background #fff
   color black
@@ -24,17 +23,61 @@ $circle = 20px
   line-height 1px
   text-align center
 
-.green-circle
-  border $circle solid rgb(184,215,136)
+.circle
+  background: #fff;
 
-.pink-circle
-  border $circle solid rgb(222,212,202)
+.circle:after
+  content: '';
+  position: absolute;
+  top: -15px;
+  bottom: -15px;
+  right: -15px;
+  left: -15px;
+  background-image: linear-gradient(to bottom left, #AED48A 0%, #30BFBF 100%);
+  z-index: -1;
+  border-radius: inherit;
 
-.blue-circle
-  border $circle solid rgb(47,193,194)
+.circle
+  margin-left 3%
 
-.gradient-circle
-  // border 30px solid -moz-linear-gradient(0deg, rgba(173,212,136,1) 0%, rgba(173,212,136,1) 2%, rgba(48,191,191,1) 100%);
+.green-circle:after
+  content: '';
+  position: absolute;
+  top: -15px;
+  bottom: -15px;
+  right: -15px;
+  left: -15px;
+  background-image: linear-gradient(to bottom left, rgb(184,215,136) 0%, rgb(184,215,136) 100%);
+  z-index: -1;
+  border-radius: inherit;
+
+.pink-circle:after
+  content: '';
+  position: absolute;
+  top: -15px;
+  bottom: -15px;
+  right: -15px;
+  left: -15px;
+  background-image: linear-gradient(to bottom left,rgb(222,212,202)  0%, rgb(222,212,202) 100%);
+  z-index: -1;
+  border-radius: inherit;
+
+.blue-circle:after
+  content: '';
+  position: absolute;
+  top: -15px;
+  bottom: -15px;
+  right: -15px;
+  left: -15px;
+  background-image: linear-gradient(to bottom left, rgb(47,193,194) 0%, rgb(47,193,194) 100%);
+  z-index: -1;
+  border-radius: inherit;
+
+.circle span
+  text-shadow none
+  -webkit-user-select none
+  -moz-user-select none
+  -ms-user-select none
 
 @media (min-width 1680px)
   .circle
@@ -53,19 +96,27 @@ $circle = 20px
     width 32.5%
     padding 16.5% 0
     font-size 24px
+    margin 0 5% 8% 5%
 
-  .circle.pink-circle,.circle.gradient-circle
-    margin-left 5%
-
+  .menu-opt
+    padding-top 6vw
 
 @media (max-width 480px)
   .circle
     font-size 20px
+    margin-bottom 12%
 
 // One-Column //
  @media (max-width 320px)
      .circle
        font-size 17px
+       width 32.5%
+       padding 16.5% 0
+       margin 0 5% 12% 5%
+
+      .menu-opt
+        padding-top 12vw
+
 //   .circle
 //     width 42.5%
 //     padding 20.5% 0

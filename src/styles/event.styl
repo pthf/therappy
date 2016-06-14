@@ -3,12 +3,12 @@
   font-size 16px
   padding 0
   width 70%
-  text-align center
+  text-align left
 
 .event-elem
   display inline-block
   width 30%
-  margin 3vw .5vw 3vw 0
+  margin 0vw .5vw 3vw 0
   background-color rgb(242,242,242)
 
 .event-title
@@ -30,9 +30,10 @@
   color #fff
   margin 5vw 2vw 1vw 0
   padding 15px .5px 15px .5px
-  width 30%
+  width 120px
   cursor pointer
   display inline-block
+  text-align center
 
 .ver-mas:hover
   opacity .8
@@ -47,20 +48,20 @@
   /* -- MEDIA QUERIES  -- */
 
 /* 3 COL */
+@media (min-width 1920px)
+  .event-elem
+    width 32%
+
 @media (max-width 1920px)
   .event-elem
     width 32%
 
-@media (min-width 1680px)
+@media (max-width 1680px)
   .event-title span
     font-size 24px
 
   .event-info span
     font-size 22px
-
-@media (max-width: 1024px)
-  .ver-mas
-    width 36%
 
 /* SINGLE COL */
 @media (max-width: 768px)
@@ -70,12 +71,16 @@
   .ver-mas
     margin 7vw 2vw 3vw 0
     padding 1.5vw .5vw 1.5vw .5vw
-    width 24%
+
+  .event-title span
+    font-size 18px
+
+  .event-info span
+    font-size 16px
 
 @media (max-width: 640px)
   .ver-mas
     margin 7vw 3vw 3vw 0
-    width 30%
 
   .event-elem
     width 80%
@@ -85,14 +90,17 @@
     width 90%
 
   .ver-mas
-    width 33%
-    margin 12vw 3vw 5vw 0
+    margin 20vw 3vw 5vw 0
+    width 100px
+    padding 6px 0
+
+  .event-info
+    width 50%
 
 @media (max-width: 320px)
   .event-elem
     width 100%
 
   .ver-mas
-    margin 25vw 3vw 5vw 0
-    width 40%
+    margin 5vw 3vw 5vw 0
     padding 3vw .5vw 3vw .5vw

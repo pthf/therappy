@@ -1,0 +1,43 @@
+.popup-profiles
+    display none
+    position absolute
+    flex-direction row
+    justify-content center
+    align-items flex-start
+    background white
+    width 100%
+    height auto
+    padding-bottom 3vw
+    z-index 8
+
+.profile-info
+    width 40%
+    margin-left 2vw
+
+@media (max-width 1366px)
+
+  .pop-up-title
+      padding 1.5vw 0
+
+  .profile
+      margin-top 4vw
+
+  .popup-profiles
+      padding-bottom 0
+
+@media (max-width 768px)
+  .popup-profiles
+      flex-direction column
+      align-items center
+
+  .profile-info
+      margin-left -6vw
+
+@media (max-width 480px)
+
+  .profile-info
+      width 80%
+      margin 0 auto
+
+  .pop-up-title
+      padding 0

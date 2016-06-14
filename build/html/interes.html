@@ -4,16 +4,8 @@
     <meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-
-    <title>Therappy - Capacitación</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- JQuery  -->
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="/js/fastclick.js"></script>
-
+    <title>Therappy - De tu interés</title>
+    <link rel="stylesheet" href="../../css/main.css">
 
   </head>
   <body>
@@ -21,17 +13,17 @@
 <!-- Header  -->
     <header>
       <section class="logo">
-        <a href="index.html"><img src="img/logo-therappy.svg" ></a>
+        <a href="../index.html"><img class="logo-header" src="../img/logo-therappy.png" ></a>
       </section>
 
       <section class="menu-bar">
         <ul class="list-content">
-          <a href="quien.html"><li class="list-item"><span  class=" hvr-bob">Quiénes somos</span></li></a>
-          <a href="servicios.html"><li class="list-item"><span  class=" hvr-bob">Servicios</span></li></a>
-          <a href="capacitacion.html"><li class="list-item selected"><span  class="hvr-bob selected">Capacitación</span></li></a>
-          <a href="eventos.html"><li class="list-item"><span  class=" hvr-bob">Eventos</span></li></a>
-          <a href="galeria.html"><li class="list-item"><span  class=" hvr-bob">Galería</span></li></a>
-          <a href="contacto.html"><li class="list-item"><span  class=" hvr-bob">Contacto</span></li></a>
+          <a href="quien.html"><li class="list-item"><span  >Quiénes somos</span></li></a>
+          <a href="servicios.html"><li class="list-item"><span  >Servicios</span></li></a>
+          <a href="interes.html"><li class="list-item selected"><span  class="hvr-bob selected">De tu interés</span></li></a>
+          <a href="eventos.html"><li class="list-item"><span  >Eventos</span></li></a>
+          <a href="galeria.html"><li class="list-item"><span  >Galería</span></li></a>
+          <a href="contacto.html"><li class="list-item"><span  >Contacto</span></li></a>
         </ul>
       </section>
 
@@ -39,19 +31,11 @@
         <ul class="mobile-nav">
           <a href="quien.html"><li>Quiénes somos</li></a>
           <a href="servicios.html"><li>Servicios</li></a>
-          <a href="capacitacion.html"><li class="selected">Capacitación</li></a>
+          <a href="interes.html"><li class="selected">De tu interés</li></a>
           <a href="eventos.html"><li>Eventos</li></a>
           <a href="galeria.html"><li>Galería</li></a>
           <a href="contacto.html"><li>Contacto</li></a>
         </ul>
-
-      <script type="text/javascript">
-          var icon = document.querySelector('.nav-icon');
-
-          icon.onclick = function() {
-          document.querySelector('.mobile-nav').classList.toggle('is-show');
-        }
-      </script>
 
     </header>
 
@@ -64,7 +48,7 @@
 <!-- Banner  -->
     <section class="banner">
       <div class="banner-image">
-        <img src="img/banner-capacitacion-01.png" >
+        <img src="../img/banner-capacitacion-01.png" >
       </div>
     </section>
 
@@ -87,7 +71,7 @@
            Illum nesciunt consectetur, temporibus, quidem vitae officia?Lorem ipsum dolor sit amet, consectetur adipis
           icing elit. Ad nam aliquid, reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero.
          </p>
-        <div class="close-info">Regresar <</div>
+        <div class="close-info hvr-shrink">Regresar <</div>
       </div>
 
     <!-- Segunda barra  -->
@@ -99,7 +83,7 @@
 
       <div class="bar-cap cap-content">
         <p class="info-cap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam aliquid, reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero. Illum nesciunt consectetur, temporibus, quidem vitae officia?</p>
-        <div class="close-info">Regresar <</div>
+        <div class="close-info hvr-shrink">Regresar <</div>
       </div>
 
     <!-- Tercera barra -->
@@ -111,27 +95,8 @@
 
       <div class="bar-cap cap-content">
         <p class="info-cap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam aliquid, reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero. Illum nesciunt consectetur, temporibus, quidem vitae officia?</p>
-        <div class="close-info">Regresar <</div>
+        <div class="close-info hvr-shrink">Regresar <</div>
       </div>
-
-
-<!-- JS  -->
-  <script type="text/javascript">
-
-
-    $('.cap-content').slideUp(0);
-
-    $('.bar-cap').click(function () {
-     $(this).next('.cap-content').slideToggle(500);
-     this.toggle = !this.toggle;
-     return false;
-    });
-
-  $('.close-info').click(function (){
-    $(this).parent().slideUp(500);
-  })
-
-  </script>
 
     </section>
 
@@ -139,11 +104,11 @@
     <section class="footer">
       <div class="footer-top">
         <div class="footer-top-right">
-          <a href="index.html"><img class="Logo_Footer" src="img/logo-white.svg"/></a>  <br><br>
+          <a href="../index.html"><img class="Logo_Footer" src="../img/logo-white.svg"/></a>  <br><br>
 
-          <a href=""><img class="social_icon" src="img/twitter.svg"/></a>
-          <a href=""><img class="social_icon" src="img/instagram.svg"/></a>
-          <a href=""><img class="social_icon" src="img/facebook.svg"/></a>
+          <a href=""><img class="social_icon" src="../img/twitter.svg"/></a>
+          <a href=""><img class="social_icon" src="../img/instagram.svg"/></a>
+          <a href=""><img class="social_icon" src="../img/facebook.svg"/></a>
           <br><br>
 
           <span>Dirección #234 Col. Providencia</span> <br>
@@ -157,7 +122,7 @@
               <li class="menu-title">MENU</li>
               <a href="quien.html"><li>Quiénes somos</li></a>
               <a href="servicios.html"><li>Servicios</li></a>
-              <a href="capacitacion.html"><li>Capacitación</li></a>
+              <a href="interes.html"><li>De tu interés</li></a>
               <a href="galeria.html"><li>Galería</li></a>
               <a href="contacto.html"><li>Contacto</li></a>
             </ul>
@@ -170,6 +135,38 @@
     <footer>
       <p class="footer-text">TODOS LOS DERECHOS RESERVADOS Therappy™ 2016</p>
     </footer>
+
+    <!-- JQuery  -->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript">
+        var icon = document.querySelector('.nav-icon');
+
+        icon.onclick = function() {
+        document.querySelector('.mobile-nav').classList.toggle('is-show');
+      }
+    </script>
+
+    <!-- JS  -->
+      <script type="text/javascript">
+        $('.cap-content').slideUp(0);
+
+        $('.bar-cap').click(function () {
+         $(this).next('.cap-content').slideToggle(500);
+         this.toggle = !this.toggle;
+         return false;
+        });
+
+        //Cerrar con el boton o la caja del contenido
+        $('.cap-content').click(function (){
+          $(this).slideUp(500);
+        })
+
+        //Si se quiere que se cierre solo con el boton
+        // $('.close-info').click(function (){
+        //   $(this).parent().slideUp(500);
+        // })
+      </script>
 
 
   </body>

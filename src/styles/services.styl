@@ -8,6 +8,7 @@
 .services-elem img
   width 40%
   margin-bottom .5vw
+  z-index -1
 
 #Grid
   text-align left
@@ -42,9 +43,30 @@
   bottom 0
   z-index 9
 
+.ver-mas-button
+  background-color black
+  padding 1vw
+  color white
+  margin-left 40%
+  cursor pointer
+  z-index 8
+  opacity 0
+
+.ver-mas-button:hover
+  opacity .8
+
+.item-serv
+  cursor pointer
+
+
   /* -- MEDIA QUERIES  -- */
 
 /* 3 COL */
+@media (min-width: 1920px)
+  #Grid li
+    width: 32%;
+    margin-bottom: 2%;
+
 @media (max-width: 1920px)
   #Grid li
     width: 32%;
@@ -54,10 +76,14 @@
 @media (max-width: 768px)
  #Grid li
    width: 48%;
-   margin-top 10vw
+   margin-top 4.5vw
 
  #Grid li .services-elem
    margin-top 5vw
+
+ .services-elem img
+   width 50%
+
 
 /* SINGLE COL */
 @media (max-width: 320px){

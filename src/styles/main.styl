@@ -7,9 +7,12 @@
           /*** HOME ***/
 @import './banner' /* Banners */
 @import './circle' /* Circulos hechos en CSS/Styl */
+@import './slider' /* Banners */
 
           /*** Quienes Somos ***/
 @import './quien' /* Estilos de quien.html */
+@import './popup-profile' /* Estilos en popup de los perfiles */
+@import './popup-services' /* Estilos en popup de los servicios */
 
           /*** Capacitacion ***/
 @import './capacitacion' /* Estilos de Capacitacion.html */
@@ -19,6 +22,7 @@
 
           /*** Eventos ***/
 @import './event' /* Estilos de Eventos.html */
+@import './popup-events' /* Estilos de Eventos PopUP.html */
 
           /*** Galeria ***/
 @import './gallery' /* Estilos de galeria.html */
@@ -26,8 +30,14 @@
 /*** Contacto ***/
 @import './contacto' /* Estilos de contacto.html */
 
+
 /*** Librerias ***/
 @import './hover-min.css'
+@import './animate.min.css'
+
+/*** Crossbrowser ***/
+@import './firefox-fix.styl'
+
 
 @font-face
   font-family "FuturaBT"
@@ -44,3 +54,12 @@ a:link
 a:visited
     text-decoration: none
     color: rgb(47,193,193)
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
