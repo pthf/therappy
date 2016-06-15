@@ -5,12 +5,58 @@
     align-items flex-start
     position absolute
     background rgba(230,230,230,1)
-    width 70%
+    width 60%
     height auto
     margin 0 auto
-    padding 2vw 0 2vw 0
+    padding 0
     z-index 8
 
 .popup-events-wrapper
     width 80%
     margin 0 auto
+    padding 3vw 0
+
+.popup-events-img
+    width 100%
+    height 100%
+    text-align left
+
+.popup-events-img img
+    width auto
+    height auto
+
+.ver-mas.quien-button.event-button
+    margin-top 2vw
+    margin-right 0
+
+@media (max-width 1024px)
+  .popup-events
+    width 75%
+
+@media (max-width 768px)
+  .popup-events
+    position fixed
+    top 15%
+    height auto
+    width 80%
+
+  .popup-events-img
+      width 100%
+      height 100%
+      text-align center
+
+  .popup-events-img img
+    width auto
+
+  .event-info-wrapper
+    display: flex
+    flex-direction row
+    align-items center
+    justify-content space-between
+
+@media (max-width 640px)
+
+  .popup-events-wrapper
+    width 80%
+    margin 0 auto
+    padding 0

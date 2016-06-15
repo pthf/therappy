@@ -12,6 +12,15 @@
   </head>
   <body>
 
+    <div class="lightbox animated">
+      <div class="close-lightbox">
+        <span> X </span>
+      </div>
+      <div class="img-container">
+        <img id="img-lightbox" src="" >
+      </div>
+    </div>
+
 <!-- Header  -->
     <header>
       <section class="logo">
@@ -20,12 +29,12 @@
 
       <section class="menu-bar">
         <ul class="list-content">
-          <a href="quien.html"><li class="list-item"><span  >Quiénes somos</span></li></a>
-          <a href="servicios.html"><li class="list-item"><span  >Servicios</span></li></a>
-          <a href="interes.html"><li class="list-item"><span  >De tu interés</span></li></a>
-          <a href="eventos.html"><li class="list-item"><span  >Eventos</span></li></a>
-          <a href="galeria.html"><li class="list-item selected"><span  >Galería</span></li></a>
-          <a href="contacto.html"><li class="list-item"><span  >Contacto</span></li></a>
+          <a href="quien.html"><li class="list-item"><span>Quiénes somos</span></li></a>
+          <a href="servicios.html"><li class="list-item"><span>Servicios</span></li></a>
+          <a href="interes.html"><li class="list-item"><span>De tu interés</span></li></a>
+          <a href="eventos.html"><li class="list-item"><span>Eventos</span></li></a>
+          <a href="galeria.html"><li class="list-item selected"><span>Galería</span></li></a>
+          <a href="contacto.html"><li class="list-item"><span>Contacto</span></li></a>
         </ul>
       </section>
 
@@ -65,27 +74,16 @@
       <h2>Instalaciones</h2>
     </div>
 
+
+
   <!-- ****** Primer Slider ********* -->
     <div class="wrapper">
      <span class="prev">&lt;</span>
          <div class="container">
+
             <div class="section active">
               <ul class="grid-parent">
                 <li class="feature">
-                    <img src="../img/bg-3-01.png" >
-                </li>
-                <li class="two">
-                    <img src="../img/bg-2-01.png" >
-                </li>
-                <li>
-                    <img src="../img/bg-1-01.png" >
-                </li>
-              </ul>
-            </div>
-
-            <div class="section">
-              <ul class="grid-parent">
-                <li class="feature">
                     <img src="../img/bg-2-01.png" >
                 </li>
                 <li class="two">
@@ -103,6 +101,20 @@
                     <img src="../img/bg-1-01.png" >
                 </li>
                 <li class="two">
+                    <img src="../img/bg-1-01.png" >
+                </li>
+                <li>
+                    <img src="../img/bg-2-01.png" >
+                </li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <ul class="grid-parent">
+                <li class="feature">
+                    <img src="../img/bg-1-01.png" >
+                </li>
+                <li class="two">
                     <img src="../img/bg-2-01.png" >
                 </li>
                 <li>
@@ -124,7 +136,9 @@
                 </li>
               </ul>
             </div>
+
         </div>
+
      <span class="next">&gt;</span>
     </div>
 
@@ -331,6 +345,32 @@
             $('div.active-b').removeClass('active-b').prev().addClass('active-b');
           }
       });
+    </script>
+
+    <!-- Lightbox images -->
+    <script type="text/javascript">
+
+      var imgSelected = "";
+
+      $( "ul.grid-parent li,ul.grid-parent-b li" ).click(function() {
+        $('.lightbox').css( "z-index", "7" );
+        $('.lightbox').removeClass('fadeOut');
+        $('.lightbox').addClass('fadeIn');
+
+        imgSelected = $(this).children('img').attr('src');
+
+        $("#img-lightbox").attr("src",imgSelected);
+      });
+
+      $( ".close-lightbox" ).click(function() {
+        $('.lightbox').removeClass('fadeIn');
+        $('.lightbox').addClass('fadeOut');
+
+        setTimeout(function(){
+          $('.lightbox').css( "z-index", "-10" );
+        }, 480);
+      });
+
     </script>
 
   </body>

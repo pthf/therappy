@@ -61,16 +61,13 @@
 
     <!-- Acerca de -->
 
-    <div class="quien-top">
+    <div class="quien-top event-title-top">
       <h2>Eventos</h2>
-    </div>
-
-    <div class="events-content">
 
       <!-- POPUP -->
-      <div class="popup-events">
+      <div class="popup-events animated">
         <div class="popup-events-wrapper">
-          <h3><b>Estudio electroencefalográfico</b></h3>
+          <h3><b>Nombre del evento</b></h3>
 
           <p class="popup-events-content">
              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt u
@@ -82,79 +79,100 @@
           </div>
 
 
-          <div class="ver-mas">
+          <div class="ver-mas quien-button event-button" id="close-popup">
             <span>REGRESAR < </span>
           </div>
         </div>
       </div>
 
-      <div class="event-elem">
-        <div class="event-img">
-          <img src="../img/bg-1-01.png" alt="">
-        </div>
-
-        <div class="event-title">
-          <span> <b>NOMBRE DEL EVENTO</b></span>
-        </div>
-
-        <div class="event-info">
-          <span>- Fecha / - Hora</span> <br>
-          <span>+ info</span> <br>
-          <span>+ info</span> <br>
-          <span>+ info</span> <br>
-          <span>+ info</span> <br>
-        </div>
-
-        <div class="ver-mas">
-          <span>VER MÁS</span>
-        </div>
-      </div>
-
-      <div class="event-elem">
-        <div class="event-img">
-          <img src="../img/bg-2-01.png" alt="">
-        </div>
-
-        <div class="event-title">
-          <span> <b>NOMBRE DEL EVENTO</b></span>
-        </div>
-
-        <div class="event-info">
-          <span>- Fecha / - Hora</span> <br>
-          <span>+ info</span> <br>
-          <span>+ info</span> <br>
-          <span>+ info</span> <br>
-          <span>+ info</span> <br>
-        </div>
-
-        <div class="ver-mas">
-          <span>VER MÁS</span>
-        </div>
-      </div>
-
-      <div class="event-elem">
-        <div class="event-img">
-          <img src="../img/bg-3-01.png" alt="">
-        </div>
-
-        <div class="event-title">
-          <span> <b>NOMBRE DEL EVENTO</b></span>
-        </div>
-
-        <div class="event-info">
-          <span>- Fecha / - Hora</span> <br>
-          <span>+ info</span> <br>
-          <span>+ info</span> <br>
-          <span>+ info</span> <br>
-          <span>+ info</span> <br>
-        </div>
-
-        <div class="ver-mas">
-          <span>VER MÁS</span>
-        </div>
-      </div>
-
     </div>
+
+
+    <div class="events-content">
+
+      <div class="event-elem">
+              <div class="event-img">
+                <img src="../img/bg-1-01.png" alt="">
+              </div>
+
+              <div class="event-title">
+                <span> <b>NOMBRE DEL EVENTO</b></span>
+              </div>
+
+              <div class="event-info">
+                <div class="event-info-wrapper">
+
+                  <div class="event-info-date">
+                    <span>- Fecha / - Hora</span> <br>
+                    <span>+ info</span> <br>
+                    <span>+ info</span> <br>
+                    <span>+ info</span> <br>
+                    <span>+ info</span> <br>
+                  </div>
+
+                  <div class="ver-mas">
+                    <span>VER MÁS</span>
+                  </div>
+                </div>
+              </div>
+         </div>
+
+      <div class="event-elem">
+              <div class="event-img">
+                <img src="../img/bg-2-01.png" alt="">
+              </div>
+
+              <div class="event-title">
+                <span> <b>NOMBRE DEL EVENTO</b></span>
+              </div>
+
+              <div class="event-info">
+                <div class="event-info-wrapper">
+
+                  <div class="event-info-date">
+                    <span>- Fecha / - Hora</span> <br>
+                    <span>+ info</span> <br>
+                    <span>+ info</span> <br>
+                    <span>+ info</span> <br>
+                    <span>+ info</span> <br>
+                  </div>
+
+                  <div class="ver-mas">
+                    <span>VER MÁS</span>
+                  </div>
+                </div>
+              </div>
+         </div>
+
+      <div class="event-elem">
+             <div class="event-img">
+               <img src="../img/bg-3-01.png" alt="">
+             </div>
+
+             <div class="event-title">
+               <span> <b>NOMBRE DEL EVENTO</b></span>
+             </div>
+
+             <div class="event-info">
+               <div class="event-info-wrapper">
+
+                 <div class="event-info-date">
+                   <span>- Fecha / - Hora</span> <br>
+                   <span>+ info</span> <br>
+                   <span>+ info</span> <br>
+                   <span>+ info</span> <br>
+                   <span>+ info</span> <br>
+                 </div>
+
+                 <div class="ver-mas">
+                   <span>VER MÁS</span>
+                 </div>
+               </div>
+             </div>
+        </div>
+
+
+
   </section>
 
 
@@ -203,6 +221,22 @@
       icon.onclick = function() {
       document.querySelector('.mobile-nav').classList.toggle('is-show');
     }
+  </script>
+
+  <!-- PopUp Events -->
+  <script type="text/javascript">
+    $( ".ver-mas" ).click(function() {
+        $('.popup-events').css( "display", "flex" );
+        $( ".popup-events" ).removeClass( "fadeOutRight" );
+        $( ".popup-events" ).addClass( "fadeInLeft" );
+    });
+    $( "#close-popup" ).click(function() {
+        $( ".popup-events" ).removeClass( "fadeInLeft" );
+        $( ".popup-events" ).addClass( "fadeOutRight" );
+        setTimeout(function(){
+          $('.popup-events').css( "display", "none" );
+        }, 400);
+    });
   </script>
 
   </body>

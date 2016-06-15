@@ -68,12 +68,12 @@
     <!-- Formulario de contacto -->
     <section class="content_contact">
       <form class="form">
-        <input type="text" name="firstname" placeholder="Nombre:">
+        <input type="text" name="firstname" placeholder="Nombre:" required>
         <br>
         <input type="email" name="email" required placeholder="Email">
         <br>
-        <input type="tel" pattern="[0-9]*" inputmode="numeric" name="phone" placeholder="Teléfono:"  onkeypress='validate(event)'>
-  	  	<p class="message_form"><textarea name="name" rows="8" cols="40" placeholder="Mensaje:"></textarea> </p>
+        <input type="tel" pattern="[0-9]*" inputmode="numeric" name="phone" placeholder="Teléfono:"  onkeypress='validate(event)' required>
+  	  	<p class="message_form"><textarea name="name" rows="8" cols="40" placeholder="Mensaje:" required></textarea> </p>
         <input type="submit" value="Enviar" class="hvr-grow">
       </form>
 
