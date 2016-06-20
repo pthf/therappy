@@ -28,7 +28,8 @@
       </section>
 
       <span class="nav-icon">&#9776;</span>
-        <ul class="mobile-nav">
+        <ul class="mobile-nav animated">
+          <a href="../index.html"><li>Inicio</li></a>
           <a href="quien.html"><li>Quiénes somos</li></a>
           <a href="servicios.html"><li>Servicios</li></a>
           <a href="interes.html"><li class="selected">De tu interés</li></a>
@@ -63,7 +64,7 @@
       </div>
 
       <div class="bar-cap cap-content">
-        <p class="info-cap">
+        <p class="info-cap" style="text-align: justify; display:block;">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam aliquid,
           reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero. I
           llum nesciunt consectetur, temporibus, quidem vitae officia?Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -71,7 +72,7 @@
            Illum nesciunt consectetur, temporibus, quidem vitae officia?Lorem ipsum dolor sit amet, consectetur adipis
           icing elit. Ad nam aliquid, reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero.
          </p>
-        <div class="close-info hvr-shrink">Regresar <</div>
+        <div class="close-info hvr-shrink">CERRAR <</div>
       </div>
 
     <!-- Segunda barra  -->
@@ -82,8 +83,8 @@
       </div>
 
       <div class="bar-cap cap-content">
-        <p class="info-cap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam aliquid, reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero. Illum nesciunt consectetur, temporibus, quidem vitae officia?</p>
-        <div class="close-info hvr-shrink">Regresar <</div>
+        <p class="info-cap" style="text-align: justify; display:block;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam aliquid, reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero. Illum nesciunt consectetur, temporibus, quidem vitae officia?</p>
+        <div class="close-info hvr-shrink">CERRAR <</div>
       </div>
 
     <!-- Tercera barra -->
@@ -94,8 +95,8 @@
       </div>
 
       <div class="bar-cap cap-content">
-        <p class="info-cap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam aliquid, reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero. Illum nesciunt consectetur, temporibus, quidem vitae officia?</p>
-        <div class="close-info hvr-shrink">Regresar <</div>
+        <p class="info-cap" style="text-align: justify; display:block;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam aliquid, reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero. Illum nesciunt consectetur, temporibus, quidem vitae officia?</p>
+        <div class="close-info hvr-shrink">CERRAR <</div>
       </div>
 
     </section>
@@ -139,12 +140,24 @@
     <!-- JQuery  -->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
+    <!-- Responsive Menu Script -->
     <script type="text/javascript">
-        var icon = document.querySelector('.nav-icon');
 
-        icon.onclick = function() {
-        document.querySelector('.mobile-nav').classList.toggle('is-show');
+      var icon = document.querySelector('.nav-icon');
+      var show = false;
+
+      icon.onclick = function() {
+
+      if (show) {
+        $('.mobile-nav').removeClass('fadeInDown');
+        $('.mobile-nav').addClass('fadeOutUp');
+      }else{
+        $('.mobile-nav').addClass('is-show');
+        $('.mobile-nav').addClass('fadeInDown');
+        $('.mobile-nav').removeClass('fadeOutUp');
       }
+      show=!show;
+    }
     </script>
 
     <!-- JS  -->

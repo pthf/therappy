@@ -27,7 +27,8 @@
       </section>
 
       <span class="nav-icon">&#9776;</span>
-        <ul class="mobile-nav">
+        <ul class="mobile-nav animated">
+          <a href="../index.html"><li>Inicio</li></a>
           <a href="quien.html"><li>Quiénes somos</li></a>
           <a href="servicios.html"><li class="selected">Servicios</li></a>
           <a href="interes.html"><li>De tu interés</li></a>
@@ -62,7 +63,7 @@
         <div class="popup-services-wrapper">
           <h3><b>Estudio electroencefalográfico</b></h3>
 
-          <p class="popup-services-content">
+          <p class="popup-services-content" style="text-align: justify; display:block;">
              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt u
              t labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u
              t aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum d
@@ -77,7 +78,7 @@
 
 
           <div class="ver-mas quien-button">
-            <span>REGRESAR < </span>
+            <span>CERRAR < </span>
           </div>
         </div>
       </div>
@@ -194,15 +195,28 @@
 
   <!-- JQuery  -->
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
   <!-- Responsive Menu Script -->
   <script type="text/javascript">
-      var icon = document.querySelector('.nav-icon');
 
-      icon.onclick = function() {
-      document.querySelector('.mobile-nav').classList.toggle('is-show');
+    var icon = document.querySelector('.nav-icon');
+    var show = false;
+
+    icon.onclick = function() {
+
+    if (show) {
+      $('.mobile-nav').removeClass('fadeInDown');
+      $('.mobile-nav').addClass('fadeOutUp');
+    }else{
+      $('.mobile-nav').addClass('is-show');
+      $('.mobile-nav').addClass('fadeInDown');
+      $('.mobile-nav').removeClass('fadeOutUp');
     }
+    show=!show;
+  }
   </script>
-  <!-- Hover en icono de servicios y ver mas -->
+
+  <!-- Hover en icono de ver mas -->
   <script type="text/javascript">
     $(document).on("ready",function(){
       $(".item-serv").on({
@@ -234,16 +248,30 @@
     });
   </script>
 
+  <!-- Asignar altura dinamica al popup -->
+  <script type="text/javascript">
+    var popHeight = $(".services-opts").height();
+    $('.popup-services-wrapper').css("height", popHeight);
+
+    $( window ).resize(function() {
+      var popHeight = $(".services-opts").height();
+      $('.popup-services-wrapper').css("height", popHeight);
+    });
+  </script>
+
   <!-- PopUp Servicios -->
   <script type="text/javascript">
     $( ".item-serv" ).click(function() {
         $('.popup-services').css( "display", "flex" );
-        $( ".popup-services" ).removeClass( "fadeOutRightBig" );
-        $( ".popup-services" ).addClass( "fadeInLeftBig" );
+        $( ".popup-services" ).removeClass( "fadeOutRight" );
+        $( ".popup-services" ).addClass( "fadeIn" );
+        $('html, body').animate({
+            scrollTop: $(".popup-services-wrapper").offset().top
+        }, 1000);
     });
     $( ".ver-mas" ).click(function() {
-        $( ".popup-services" ).removeClass( "fadeInLeftBig" );
-        $( ".popup-services" ).addClass( "fadeOutRightBig" );
+        $( ".popup-services" ).removeClass( "fadeIn" );
+        $( ".popup-services" ).addClass( "fadeOutRight" );
         setTimeout(function(){
           $('.popup-services').css( "display", "none" );
         }, 600);

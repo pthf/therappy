@@ -39,7 +39,8 @@
       </section>
 
       <span class="nav-icon">&#9776;</span>
-        <ul class="mobile-nav">
+        <ul class="mobile-nav animated">
+          <a href="../index.html"><li>Inicio</li></a>
           <a href="quien.html"><li>Quiénes somos</li></a>
           <a href="servicios.html"><li>Servicios</li></a>
           <a href="interes.html"><li>De tu interés</li></a>
@@ -78,7 +79,7 @@
 
   <!-- ****** Primer Slider ********* -->
     <div class="wrapper">
-     <span class="prev">&lt;</span>
+     <span class="prev" style="touch-action: manipulation">&lt;</span>
          <div class="container">
 
             <div class="section active">
@@ -139,7 +140,7 @@
 
         </div>
 
-     <span class="next">&gt;</span>
+     <span class="next" style="touch-action: manipulation">&gt;</span>
     </div>
 
     <div class="quien-top">
@@ -148,7 +149,7 @@
 
   <!-- ****** Segundo Slider ********* -->
     <div class="wrapper-b">
-     <span class="prev-b">&lt;</span>
+     <span class="prev-b" style="touch-action: manipulation">&lt;</span>
          <div class="container-b">
             <div class="section-b active-b">
               <ul class="grid-parent-b">
@@ -249,7 +250,7 @@
               </ul>
             </div>
         </div>
-     <span class="next-b">&gt;</span>
+     <span class="next-b" style="touch-action: manipulation">&gt;</span>
     </div>
 
   </section>
@@ -293,14 +294,58 @@
   <!-- Jquery  -->
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
-  <!-- Script responsive menu -->
+  <script src="../js/fastclick.js"></script>
   <script type="text/javascript">
-      var icon = document.querySelector('.nav-icon');
-
-      icon.onclick = function() {
-      document.querySelector('.mobile-nav').classList.toggle('is-show');
-    }
+    window.addEventListener('load', function() {
+      new FastClick(document.body);
+    }, false);
   </script>
+
+  <!-- Responsive Menu Script -->
+  <script type="text/javascript">
+
+    var icon = document.querySelector('.nav-icon');
+    var show = false;
+
+    icon.onclick = function() {
+
+    if (show) {
+      $('.mobile-nav').removeClass('fadeInDown');
+      $('.mobile-nav').addClass('fadeOutUp');
+    }else{
+      $('.mobile-nav').addClass('is-show');
+      $('.mobile-nav').addClass('fadeInDown');
+      $('.mobile-nav').removeClass('fadeOutUp');
+    }
+    show=!show;
+  }
+  </script>
+
+  <!-- Lightbox images -->
+  <script type="text/javascript">
+
+    var imgSelected = "";
+
+    $( "ul.grid-parent li,ul.grid-parent-b li" ).click(function() {
+      imgSelected = $(this).children('img').attr('src');
+      $("#img-lightbox").attr("src",imgSelected);
+
+      $('.lightbox').css( "z-index", "7" );
+      $('.lightbox').removeClass('fadeOut');
+      $('.lightbox').addClass('fadeIn');
+    });
+
+    $( ".close-lightbox,.lightbox" ).click(function() {
+      $('.lightbox').removeClass('fadeIn');
+      $('.lightbox').addClass('fadeOut');
+
+      setTimeout(function(){
+        $('.lightbox').css( "z-index", "-10" );
+      }, 480);
+    });
+
+  </script>
+
 
   <!-- Script primer slider -->
   <script type="text/javascript">
@@ -347,31 +392,6 @@
       });
     </script>
 
-    <!-- Lightbox images -->
-    <script type="text/javascript">
-
-      var imgSelected = "";
-
-      $( "ul.grid-parent li,ul.grid-parent-b li" ).click(function() {
-        $('.lightbox').css( "z-index", "7" );
-        $('.lightbox').removeClass('fadeOut');
-        $('.lightbox').addClass('fadeIn');
-
-        imgSelected = $(this).children('img').attr('src');
-
-        $("#img-lightbox").attr("src",imgSelected);
-      });
-
-      $( ".close-lightbox" ).click(function() {
-        $('.lightbox').removeClass('fadeIn');
-        $('.lightbox').addClass('fadeOut');
-
-        setTimeout(function(){
-          $('.lightbox').css( "z-index", "-10" );
-        }, 480);
-      });
-
-    </script>
 
   </body>
 

@@ -1,19 +1,23 @@
 .popup-services
     display none
     flex-direction column
-    justify-content flex-start
-    align-items flex-start
+    flex-direction column
+    justify-content center
     background rgba(230,230,230,1)
     position absolute
     width 60%
     height auto
     margin 0 auto
     padding 1vw 0 2vw 0
-    z-index 8
+    z-index 2
 
 .popup-services-wrapper
     width 80%
     margin 0 auto
+    display flex
+    flex-direction column
+    justify-content center
+    align-items flex-start
 
 h3
   font-size 2em
@@ -21,28 +25,12 @@ h3
 p.popup-services-content
     font-size 22px
 
-@media (max-width: 1920px)
-  .popup-services-wrapper
-    padding 13vw 0
-
-@media (max-width: 1680px)
-  .popup-services-wrapper
-    padding 8.5vw 0
-
-@media (max-width: 1440px)
-  .popup-services-wrapper
-    padding 7vw 0
-
 @media (max-width: 1366px)
-  .popup-services-wrapper
-    padding 2vw 0
 
   p.popup-services-content
     font-size 21px
 
 @media (max-width: 1280px)
-  .popup-services-wrapper
-    padding 7vw 0
 
   p.popup-services-content
     font-size 16px
@@ -51,19 +39,12 @@ p.popup-services-content
   .popup-services
     width 75%
 
-  .popup-services-wrapper
-    padding 6.8vw 0
-
 
 @media (max-width: 768px)
   .popup-services
     width 80%
     padding 0 0 0 0
     position absolute
-    top 20%
-
-  .popup-services-wrapper
-    padding 1.5vw 0
 
   p.popup-services-content
     font-size 14px

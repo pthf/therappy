@@ -46,7 +46,11 @@
   cursor pointer
   display inline-block
   text-align center
+  transition .4s
 
+.close-lightbox:hover
+  opacity .8
+  color black
 
 .img-container img
   width 100%
@@ -192,11 +196,8 @@ ul.grid-parent-b li.feature-b
   z-index 3
   margin-top 6vw
 
-.next-b:hover
-  color black
-  transition .5s
-.prev-b:hover
-  color black
+.next-b:hover,.prev-b:hover
+  color rgb(182,215,130)
   transition .5s
 
 .next-b
@@ -209,12 +210,13 @@ li.two-b
   margin-bottom .5%
 
 .next,.prev,.next-b,.prev-b
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently */
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  cursor pointer
 
 /* Firefox CSS */
 @-moz-document url-prefix()
@@ -241,7 +243,7 @@ li.two-b
     margin-bottom 10vw
 
   .img-container
-    top: 50%; left: 0; bottom: 0; right: 0;
+    top: 35%; left: 0; bottom: 0; right: 0;
 
 @media (max-width: 640px)
 

@@ -26,7 +26,8 @@
       </section>
 
       <span class="nav-icon" >&#9776;</span>
-        <ul class="mobile-nav">
+        <ul class="mobile-nav animated">
+          <a href="../index.html"><li class="selected">Inicio</li></a>
           <a href="html/quien.html"><li>Quiénes somos</li></a>
           <a href="html/servicios.html"><li>Servicios</li></a>
           <a href="html/interes.html"><li>De tu interés</li></a>
@@ -47,9 +48,36 @@
 
 <!-- Banner  -->
     <section class="banner">
-      <div class="banner-image">
-        <img src="img/banner-1-01.png" >
+      <div class="touch-slider">
+
+        <span style="touch-action: manipulation" class="arrow-left" href="#"> < </span>
+        <span style="touch-action: manipulation" class="arrow-right" href="#"> > </span>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+
+
+            <div class="swiper-slide">
+              <img src="img/banner-1-01.png">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="img/banner-2-01.png">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="img/banner-3-01.png">
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="pagination"></div>
+
       </div>
+
     </section>
 
 
@@ -92,7 +120,7 @@
 
           <span>Dirección #234 Col. Providencia</span> <br>
           <span>Guadalajara, Jal, México C.P. 44069 </span> <br>
-          <span>Tel. 33 44 77 33 - 33 77 22 88 </span> <br>
+          <span>Tel. <a style="color:white" href="tel:33 44 77 33">33 44 77 33</a> - <a style="color:white" href="tel:33 77 22 88">33 77 22 88</a> </span> <br>
           <span>info@therappy.com </span> <br>
         </div>
 
@@ -117,14 +145,51 @@
 
     <!-- JQuery  -->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../js/fastclick.js"></script>
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+        new FastClick(document.body);
+      }, false);
+    </script>
+    <script src="js/slider.js"></script>
 
     <!-- Responsive Menu Script -->
     <script type="text/javascript">
-        var icon = document.querySelector('.nav-icon');
 
-        icon.onclick = function() {
-        document.querySelector('.mobile-nav').classList.toggle('is-show');
+      var icon = document.querySelector('.nav-icon');
+      var show = false;
+
+      icon.onclick = function() {
+
+      if (show) {
+        $('.mobile-nav').removeClass('fadeInDown');
+        $('.mobile-nav').addClass('fadeOutUp');
+      }else{
+        $('.mobile-nav').addClass('is-show');
+        $('.mobile-nav').addClass('fadeInDown');
+        $('.mobile-nav').removeClass('fadeOutUp');
       }
+      show=!show;
+    }
+    </script>
+
+
+    <!-- Slider settings -->
+    <script type="text/javascript">
+      var mySwiper = new Swiper('.swiper-container',{
+        pagination: '.pagination',
+        loop:true,
+        grabCursor: false,
+        paginationClickable: true,
+        autoplay:false,
+        speed:500
+      })
+      $('.arrow-left').on('click', function(e){
+        mySwiper.swipePrev()
+      })
+      $('.arrow-right').on('click', function(e){
+        mySwiper.swipeNext()
+      })
     </script>
 
   </body>

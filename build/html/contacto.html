@@ -31,7 +31,8 @@
       </section>
 
       <span class="nav-icon">&#9776;</span>
-        <ul class="mobile-nav">
+        <ul class="mobile-nav animated">
+          <a href="../index.html"><li>Inicio</li></a>
           <a href="quien.html"><li>Quiénes somos</li></a>
           <a href="servicios.html"><li>Servicios</li></a>
           <a href="interes.html"><li>De tu interés</li></a>
@@ -78,6 +79,9 @@
       </form>
 
       <div class="info_contact">
+
+        <span class="contact-text">Citas</span>
+        <br><br>
         <p class="info_text">
         Dirección #234 Col. Providencia <br>
         Guadalajara, Jalisco, México  C.P. 44069 <br>
@@ -85,9 +89,9 @@
 
         info@therappy.com <br>
         </p>
-        <a href="" target="_blank"><img class="social_icon" src="../img/tw-icon.svg"/></a>
-        <a href="" target="_blank"><img class="social_icon" src="../img/ig-icon.svg"/></a>
-        <a href="" target="_blank"><img class="social_icon" src="../img/fb-icon.svg"/></a>
+        <a href="" target="_blank"><img class="social_icon hvr-grow" src="../img/tw-icon.svg"/></a>
+        <a href="" target="_blank"><img class="social_icon hvr-grow" src="../img/ig-icon.svg"/></a>
+        <a href="" target="_blank"><img class="social_icon hvr-grow" src="../img/fb-icon.svg"/></a>
       </div>
     </section>
 
@@ -106,6 +110,7 @@
           <a href=""><img class="social_icon" src="../img/instagram.svg"/></a>
           <a href=""><img class="social_icon" src="../img/facebook.svg"/></a>
           <br><br>
+
 
           <span>Dirección #234 Col. Providencia</span> <br>
           <span>Guadalajara, Jal, México C.P. 44069 </span> <br>
@@ -135,13 +140,24 @@
     <!-- Scripts  -->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
-    <!-- Script responsive menu -->
+    <!-- Responsive Menu Script -->
     <script type="text/javascript">
-        var icon = document.querySelector('.nav-icon');
 
-        icon.onclick = function() {
-        document.querySelector('.mobile-nav').classList.toggle('is-show');
+      var icon = document.querySelector('.nav-icon');
+      var show = false;
+
+      icon.onclick = function() {
+
+      if (show) {
+        $('.mobile-nav').removeClass('fadeInDown');
+        $('.mobile-nav').addClass('fadeOutUp');
+      }else{
+        $('.mobile-nav').addClass('is-show');
+        $('.mobile-nav').addClass('fadeInDown');
+        $('.mobile-nav').removeClass('fadeOutUp');
       }
+      show=!show;
+    }
     </script>
 
     <script src="http://maps.googleapis.com/maps/api/js"></script>
