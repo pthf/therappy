@@ -253,6 +253,11 @@
     var popHeight = $(".services-opts").height();
     $('.popup-services-wrapper').css("height", popHeight);
 
+    $( ".services-elem,.ver-mas" ).click(function() {
+      var popHeight = $(".services-opts").height();
+      $('.popup-services-wrapper').css("height", popHeight);
+    });
+
     $( window ).resize(function() {
       var popHeight = $(".services-opts").height();
       $('.popup-services-wrapper').css("height", popHeight);
@@ -267,7 +272,7 @@
         $( ".popup-services" ).addClass( "fadeIn" );
         $('html, body').animate({
             scrollTop: $(".popup-services-wrapper").offset().top
-        }, 1000);
+        }, 500);
     });
     $( ".ver-mas" ).click(function() {
         $( ".popup-services" ).removeClass( "fadeIn" );

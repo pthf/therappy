@@ -9,8 +9,16 @@
     height auto
     z-index 2
 
+.popup-profiles-wrapper
+  display flex
+  flex-direction row
+  justify-content center
+  background #e6e6e6
+  width 80%
+
+
 .profile-info
-    width 40%
+    width 45%
     margin-left 2vw
 
 @media (max-width 1366px)
@@ -24,25 +32,27 @@
   .popup-profiles
       padding-bottom 0
 
+  .profile-info
+      width 60%
+
 @media (max-width 768px)
   .popup-profiles
       flex-direction column
       align-items center
       justify-content flex-start
 
-  .profile-info
-      margin-left -6vw
-      width 60%;
+  .popup-profiles-wrapper
+    flex-direction column
+    align-items center
+    justify-content flex-start
 
-@media (max-width 640px)
-
   .profile-info
-      width 70%
+      width 80%
 
 @media (max-width 480px)
 
   .profile-info
-      width 80%
+      width 90%
       margin 0 auto
 
   .pop-up-title

@@ -80,7 +80,7 @@
           </div>
 
           <br>
-          <div class="ver-mas quien-button event-button  hvr-shrink  hvr-shrink" id="close-popup">
+          <div class="ver-mas quien-button event-button hvr-shrink" id="close-popup">
             <span>CERRAR < </span>
           </div>
         </div>
@@ -233,13 +233,42 @@
   }
   </script>
 
+  <!-- Asignar altura dinamica al popup -->
+  <script type="text/javascript">
+  //Condicional si el navegador es mozilla
+  if(navigator.userAgent.indexOf("Firefox") != -1) {
+      var popHeight = $(".events-content").outerHeight();
+      var popPadding = $(".events-content").css('padding');
+      $('.popup-events').css("height", popHeight);
+      $('.popup-events').css("padding", popPadding);
 
-    <!-- Asignar altura dinamica al popup -->
-    <script type="text/javascript">
+      $( ".event-elem,.ver-mas" ).click(function() {
+        var popHeight = $(".events-content").outerHeight();
+        var popPadding = $(".events-content").css('padding');
+        $('.popup-events').css("height", popHeight);
+        $('.popup-events').css("padding", popPadding);
+      });
+
+      $( window ).resize(function() {
+        var popHeight = $(".events-content").outerHeight();
+        var popPadding = $(".events-content").css('padding');
+        $('.popup-events').css("height", popHeight);
+        $('.popup-events').css("padding", popPadding);
+      });
+    }
+    else //Todos los demás browsers
+    {
       var popHeight = $(".events-content").height();
       var popPadding = $(".events-content").css('padding');
       $('.popup-events').css("height", popHeight);
       $('.popup-events').css("padding", popPadding);
+
+      $( ".event-elem,.ver-mas" ).click(function() {
+        var popHeight = $(".events-content").height();
+        var popPadding = $(".events-content").css('padding');
+        $('.popup-events').css("height", popHeight);
+        $('.popup-events').css("padding", popPadding);
+      });
 
       $( window ).resize(function() {
         var popHeight = $(".events-content").height();
@@ -247,7 +276,8 @@
         $('.popup-events').css("height", popHeight);
         $('.popup-events').css("padding", popPadding);
       });
-    </script>
+    }
+  </script>
 
   <!-- PopUp Events -->
   <script type="text/javascript">
@@ -256,7 +286,7 @@
         $( ".popup-events" ).removeClass( "fadeOutRight" );
         $( ".popup-events" ).addClass( "fadeInLeft" );
         $('html, body').animate({
-            scrollTop: $(".popup-events").offset().top
+            scrollTop: $(".popup-events-wrapper").offset().top
         }, 1000);
     });
     $( "#close-popup" ).click(function() {
