@@ -1,15 +1,15 @@
 .popup-services
     display none
     flex-direction column
-    flex-direction column
     justify-content center
     background rgba(230,230,230,1)
-    position absolute
-    width 60%
+    width 100%
     height auto
     margin 0 auto
     padding 1vw 0 2vw 0
     z-index 2
+    position relative
+    transition 0.15s ease-out;
 
 .popup-services-wrapper
     width 80%
@@ -37,14 +37,12 @@ p.popup-services-content
 
 @media (max-width: 1024px)
   .popup-services
-    width 75%
-
+    width 100%
 
 @media (max-width: 768px)
   .popup-services
-    width 80%
+    width 100%
     padding 0 0 0 0
-    position absolute
 
   p.popup-services-content
     font-size 14px
