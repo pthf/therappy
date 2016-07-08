@@ -3,11 +3,11 @@
   font-size 16px
   padding 7vw 0
   width 60%
-  text-align center
+  text-align left
 
 .event-elem
   display inline-block
-  width 30%
+  width 31.5%
   margin 0vw .5vw 3vw 0
   background-color rgb(242,242,242)
 
@@ -53,15 +53,20 @@
 
 .event-info-date
   margin-left 10px
+  margin-right 10px
 
+.ver-mas.event-mas
+  position absolute
+  right 0
+  bottom 0
+  margin 1vw
 
-  /* -- MEDIA QUERIES  -- */
+/* -- MEDIA QUERIES  -- */
 
 /* 3 COL */
 @media (min-width 1920px)
   .event-elem
     width 32%
-
 
 @media (max-width 1680px)
   .event-title span
@@ -81,16 +86,31 @@
   .event-info-date span
     font-size 18px
 
+  .ver-mas.event-mas
+    padding 10px .5px
+    width 90px
 
-
-@media (max-width 1024px)
   .events-content
     width 75%
+
+  .quien-top.event-title-top
+    width 75%
+
+@media (max-width 1280px)
+  .events-content
+    width 80%
+
+@media(max-width 1024px)
+  .event-elem
+    width 48.5%
+
+  .quien-top.event-title-top
+    width 80%
 
 /* SINGLE COL */
 @media (max-width: 768px)
   .event-elem
-    width 80%
+    width 100%
 
   .event-title span
     font-size 18px
@@ -98,22 +118,23 @@
   .event-info-date span
     font-size 16px
 
-@media (max-width: 640px)
+  .ver-mas.event-mas
+    margin 3vw
 
-  .event-elem
-    width 80%
+  .events-content
+    width 90%
+    text-align center
+
+  .quien-top.event-title-top
+    width 90%
 
 @media (max-width: 480px)
-  .event-elem
-    width 90%
 
   .ver-mas
     width 100px
     padding 6px 0
 
 @media (max-width: 320px)
-  .event-elem
-    width 100%
 
   .ver-mas
     padding 3vw .5vw 3vw .5vw

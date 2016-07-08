@@ -82,7 +82,7 @@
             <b>¿Cuáles son sus beneficios?</b> Ayudar al autoconocimiento, conocer la raíz del malestar, favorece su
             bienestar psicológico y emocional de manera profesional y eficiente. <br><br>
 
-            PSIQUIATRÍA INFANTIL Y DE LA ADOLESCENCIA  <br><br>
+            PSIQUIATRÍA INFANTIL Y DE LA ADOLESCENCIA  <br><br>
 
             <b>¿Qué es?</b> Es una disciplina médica del ámbito de la Psiquiatría llevada a cabo por un psiquiatra
             especializado en niños y adolescentes encargado de preservar su salud mental. <br><br>

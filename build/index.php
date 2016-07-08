@@ -117,9 +117,9 @@
           <a href=""><img class="social_icon" src="img/facebook.svg"/></a>
           <br><br>
 
-          <span>Dirección #234 Col. Providencia</span> <br>
+          <span>Calle Toltecas 3543. Col. Monraz. Guadalajara, Jal.</span> <br>
           <span>Guadalajara, Jal, México C.P. 44069 </span> <br>
-          <span>Tel. <a style="color:white" href="tel:33 44 77 33">33 44 77 33</a> - <a style="color:white" href="tel:33 77 22 88">33 77 22 88</a> </span> <br>
+          <span>Teléfonos consultorio​: <a style="color:white" href="tel:2003​8213">2003​-​8213</a> - <a style="color:white" href="tel:1730​5996">1730​-​5996</a> </span> <br>
           <span>info@therappy.com </span> <br>
         </div>
 

@@ -1,6 +1,6 @@
 //API de Google Maps
 
-var myCenter=new google.maps.LatLng(21.171822,-101.7333769);
+var myCenter=new google.maps.LatLng(20.6820281,-103.401426,17);
 
 function initialize() {
   var mapProp = {

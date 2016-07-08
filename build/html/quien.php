@@ -83,7 +83,7 @@
             </div>
 
             <p id="about-me" style="text-align: justify; display:block;">
-              <i>“Ningún hombre es feliz a menos que crea serlo.”  Publius Siro</i> <br>
+              <i>“Ningún hombre es feliz a menos que crea serlo.”  Publius Siro</i> <br>
 
               &#x2022; Médico Cirujano por la Universidad Autónoma de Aguascalientes (UAA). <br><br>
 

@@ -56,51 +56,130 @@
 <!-- Seccion capacitacion -->
     <section class="capacitacion">
 
-    <!-- Primera barra -->
+      <div class="quien-top event-title-top">
+        <!-- PopUp Interes -->
+        <div class="popup-events animated">
+          <div class="popup-events-wrapper">
+            <div class="close-lightbox">
+              <span> X </span>
+            </div>
+            <h3><b>Nombre de la nota</b></h3>
 
-      <div class="bar-cap school-parents">
-        <span class="title-cap">Escuela para padres.</span>
-        <span class="arrow-cap"> > </span>
-      </div>
+            <p class="popup-events-content" style="text-align: justify; display:block;">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt u
+               t labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt u <br> <br>
+               t labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt u
+               t labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u
+            </p>
 
-      <div class="bar-cap cap-content">
-        <p class="info-cap" style="text-align: justify; display:block;">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam aliquid,
-          reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero. I
-          llum nesciunt consectetur, temporibus, quidem vitae officia?Lorem ipsum dolor sit amet, consectetur adipisicing
-           elit. Ad nam aliquid, reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero.
-           Illum nesciunt consectetur, temporibus, quidem vitae officia?Lorem ipsum dolor sit amet, consectetur adipis
-          icing elit. Ad nam aliquid, reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero.
-         </p>
-        <div class="img-cap">
-          <img src="../img/banner-1-01.png">
+            <div class="popup-events-img">
+                <img src="../img/bg-1-01.png" alt="">
+            </div>
+
+            <br>
+            <div class="ver-mas quien-button event-button hvr-shrink" id="close-popup">
+              <span>CERRAR < </span>
+            </div>
+          </div>
         </div>
-        <div class="close-info hvr-shrink">CERRAR <</div>
       </div>
 
-    <!-- Segunda barra  -->
+      <div class="events-content interes-content animated">
 
-      <div class="bar-cap course">
-        <span class="title-cap">Talleres Psico-educativos.</span>
-        <span class="arrow-cap"> > </span>
-      </div>
+        <div class="event-elem hvr-box-shadow-outset">
+                <div class="event-img">
+                  <img src="../img/bg-1-01.png" alt="">
+                </div>
 
-      <div class="bar-cap cap-content">
-        <p class="info-cap" style="text-align: justify; display:block;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam aliquid, reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero. Illum nesciunt consectetur, temporibus, quidem vitae officia?</p>
-        <div class="close-info hvr-shrink">CERRAR <</div>
-      </div>
+                <div class="event-title">
+                  <span> <b>NOMBRE DE LA NOTA</b></span> <br>
+                  <span class="dateInfo"><i>8 de Julio del 2016</i></span>
+                </div>
 
-    <!-- Tercera barra -->
+                <div class="event-info">
+                  <div class="event-info-wrapper">
 
-      <div class="bar-cap conference">
-        <span class="title-cap">Conferencias <span class="no-bold"> (profesionistas/escuelas)</span> </span>
-        <span class="arrow-cap"> > </span>
-      </div>
+                    <div class="event-info-date">
+                      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</span> <br>
+                    </div>
 
-      <div class="bar-cap cap-content">
-        <p class="info-cap" style="text-align: justify; display:block;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam aliquid, reprehenderit dicta at quasi, ex totam architecto, illo explicabo illum, quia libero. Illum nesciunt consectetur, temporibus, quidem vitae officia?</p>
-        <div class="close-info hvr-shrink">CERRAR <</div>
-      </div>
+                    <div class="ver-mas event-mas  hvr-shrink">
+                      <span>VER MÁS</span>
+                    </div>
+                  </div>
+                </div>
+           </div>
+        <div class="event-elem hvr-box-shadow-outset">
+             <div class="event-img">
+               <img src="../img/bg-1-01.png" alt="">
+             </div>
+
+             <div class="event-title">
+               <span> <b>NOMBRE DE LA NOTA</b></span> <br>
+               <span class="dateInfo"><i>8 de Julio del 2016</i></span>
+             </div>
+
+             <div class="event-info">
+               <div class="event-info-wrapper">
+
+                 <div class="event-info-date">
+                   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</span> <br>
+                 </div>
+
+                 <div class="ver-mas event-mas  hvr-shrink">
+                   <span>VER MÁS</span>
+                 </div>
+               </div>
+             </div>
+        </div>
+        <div class="event-elem hvr-box-shadow-outset">
+                <div class="event-img">
+                  <img src="../img/bg-1-01.png" alt="">
+                </div>
+
+                <div class="event-title">
+                  <span> <b>NOMBRE DE LA NOTA</b></span> <br>
+                  <span class="dateInfo"><i>8 de Julio del 2016</i></span>
+                </div>
+
+                <div class="event-info">
+                  <div class="event-info-wrapper">
+
+                    <div class="event-info-date">
+                      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</span> <br>
+                    </div>
+
+                    <div class="ver-mas event-mas  hvr-shrink">
+                      <span>VER MÁS</span>
+                    </div>
+                  </div>
+                </div>
+           </div>
+        <div class="event-elem hvr-box-shadow-outset">
+             <div class="event-img">
+               <img src="../img/bg-1-01.png" alt="">
+             </div>
+
+             <div class="event-title">
+               <span> <b>NOMBRE DE LA NOTA</b></span> <br>
+               <span class="dateInfo"><i>8 de Julio del 2016</i></span>
+             </div>
+
+             <div class="event-info">
+               <div class="event-info-wrapper">
+
+                 <div class="event-info-date">
+                   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</span> <br>
+                 </div>
+
+                 <div class="ver-mas event-mas  hvr-shrink">
+                   <span>VER MÁS</span>
+                 </div>
+               </div>
+             </div>
+        </div>
 
     </section>
 
@@ -115,9 +194,9 @@
           <a href=""><img class="social_icon" src="../img/facebook.svg"/></a>
           <br><br>
 
-          <span>Dirección #234 Col. Providencia</span> <br>
+          <span>Calle Toltecas 3543. Col. Monraz. Guadalajara, Jal.</span> <br>
           <span>Guadalajara, Jal, México C.P. 44069 </span> <br>
-          <span>Tel. <a style="color:white" href="tel:33 44 77 33">33 44 77 33</a> - <a style="color:white" href="tel:33 77 22 88">33 77 22 88</a> </span> <br>
+          <span>Teléfonos consultorio​: <a style="color:white" href="tel:2003​8213">2003​-​8213</a> - <a style="color:white" href="tel:1730​5996">1730​-​5996</a> </span> <br>
           <span>info@therappy.com </span> <br>
         </div>
 
@@ -141,47 +220,38 @@
 
     <!-- JQuery  -->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-
     <!-- Responsive Menu Script -->
     <script type="text/javascript">
-
-      var icon = document.querySelector('.nav-icon');
-      var show = false;
-
-      icon.onclick = function() {
-
-      if (show) {
-        $('.mobile-nav').removeClass('fadeInDown');
-        $('.mobile-nav').addClass('fadeOutUp');
-      }else{
-        $('.mobile-nav').addClass('is-show');
-        $('.mobile-nav').addClass('fadeInDown');
-        $('.mobile-nav').removeClass('fadeOutUp');
-      }
-      show=!show;
-    }
+      var icon=document.querySelector(".nav-icon"),show=!1;icon.onclick=function(){show?($(".mobile-nav").removeClass("fadeInDown"),$(".mobile-nav").addClass("fadeOutUp")):($(".mobile-nav").addClass("is-show"),$(".mobile-nav").addClass("fadeInDown"),$(".mobile-nav").removeClass("fadeOutUp")),show=!show};
     </script>
 
-    <!-- JS  -->
-      <script type="text/javascript">
-        $('.cap-content').slideUp(0);
-
-        $('.bar-cap').click(function () {
-         $(this).next('.cap-content').slideToggle(500);
-         this.toggle = !this.toggle;
-         return false;
-        });
-
-        //Cerrar con el boton o la caja del contenido
-        $('.cap-content').click(function (){
-          $(this).slideUp(500);
-        })
-
-        //Si se quiere que se cierre solo con el boton
-        // $('.close-info').click(function (){
-        //   $(this).parent().slideUp(500);
-        // })
-      </script>
+    <!-- PopUp Interes-->
+    <script type="text/javascript">
+      $( ".event-elem,.ver-mas" ).click(function() {
+          $('.popup-events').css( "display", "flex" );
+          $( ".events-content" ).removeClass( "fadeIn" );
+          $( ".events-content" ).addClass( "fadeOut" );
+          $( ".events-content" ).css( "display","none");
+          $( ".popup-events" ).removeClass( "fadeOut" );
+          $( ".popup-events" ).addClass( "fadeIn" );
+          $('html, body').animate({
+              scrollTop: $(".quien-top").offset().top
+          }, 500);
+      });
+      $( ".event-button,.close-lightbox" ).click(function() {
+          $('html, body').animate({
+              scrollTop: $(".quien-top").offset().top
+          }, 300);
+          $( ".popup-events" ).removeClass( "fadeIn" );
+          $( ".popup-events" ).addClass( "fadeOut" );
+            setTimeout(function(){
+            $('.popup-events').css( "display", "none" );
+            $( ".events-content" ).css( "display","block");
+            $( ".events-content" ).addClass( "fadeIn" );
+            $( ".events-content" ).removeClass( "fadeOut" );
+          }, 600);
+      });
+    </script>
 
 
   </body>

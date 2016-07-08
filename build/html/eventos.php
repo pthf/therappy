@@ -63,11 +63,14 @@
     <!-- Acerca de -->
 
     <div class="quien-top event-title-top">
-      <h2>Eventos</h2>
+      <!-- <h2>Eventos</h2> -->
 
       <!-- POPUP -->
       <div class="popup-events animated">
         <div class="popup-events-wrapper">
+          <div class="close-lightbox">
+            <span> X </span>
+          </div>
           <h3><b>Nombre del evento</b></h3>
 
           <p class="popup-events-content" style="text-align: justify; display:block;">
@@ -111,43 +114,15 @@
                     <span>+ info</span> <br>
                   </div>
 
-                  <div class="ver-mas  hvr-shrink">
+                  <div class="ver-mas event-mas  hvr-shrink">
                     <span>VER MÁS</span>
                   </div>
                 </div>
               </div>
          </div>
-
-      <div class="event-elem hvr-box-shadow-outset">
-              <div class="event-img">
-                <img src="../img/bg-2-01.png" alt="">
-              </div>
-
-              <div class="event-title">
-                <span> <b>NOMBRE DEL EVENTO</b></span>
-              </div>
-
-              <div class="event-info">
-                <div class="event-info-wrapper">
-
-                  <div class="event-info-date">
-                    <span>- Fecha / - Hora</span> <br>
-                    <span>+ info</span> <br>
-                    <span>+ info</span> <br>
-                    <span>+ info</span> <br>
-                    <span>+ info</span> <br>
-                  </div>
-
-                  <div class="ver-mas  hvr-shrink">
-                    <span>VER MÁS</span>
-                  </div>
-                </div>
-              </div>
-         </div>
-
       <div class="event-elem hvr-box-shadow-outset">
              <div class="event-img">
-               <img src="../img/bg-3-01.png" alt="">
+               <img src="../img/bg-1-01.png" alt="">
              </div>
 
              <div class="event-title">
@@ -165,7 +140,111 @@
                    <span>+ info</span> <br>
                  </div>
 
-                 <div class="ver-mas  hvr-shrink">
+                 <div class="ver-mas event-mas  hvr-shrink">
+                   <span>VER MÁS</span>
+                 </div>
+               </div>
+             </div>
+        </div>
+      <div class="event-elem hvr-box-shadow-outset">
+              <div class="event-img">
+                <img src="../img/bg-1-01.png" alt="">
+              </div>
+
+              <div class="event-title">
+                <span> <b>NOMBRE DEL EVENTO</b></span>
+              </div>
+
+              <div class="event-info">
+                <div class="event-info-wrapper">
+
+                  <div class="event-info-date">
+                    <span>- Fecha / - Hora</span> <br>
+                    <span>+ info</span> <br>
+                    <span>+ info</span> <br>
+                    <span>+ info</span> <br>
+                    <span>+ info</span> <br>
+                  </div>
+
+                  <div class="ver-mas event-mas  hvr-shrink">
+                    <span>VER MÁS</span>
+                  </div>
+                </div>
+              </div>
+         </div>
+      <div class="event-elem hvr-box-shadow-outset">
+             <div class="event-img">
+               <img src="../img/bg-1-01.png" alt="">
+             </div>
+
+             <div class="event-title">
+               <span> <b>NOMBRE DEL EVENTO</b></span>
+             </div>
+
+             <div class="event-info">
+               <div class="event-info-wrapper">
+
+                 <div class="event-info-date">
+                   <span>- Fecha / - Hora</span> <br>
+                   <span>+ info</span> <br>
+                   <span>+ info</span> <br>
+                   <span>+ info</span> <br>
+                   <span>+ info</span> <br>
+                 </div>
+
+                 <div class="ver-mas event-mas  hvr-shrink">
+                   <span>VER MÁS</span>
+                 </div>
+               </div>
+             </div>
+        </div>
+      <div class="event-elem hvr-box-shadow-outset">
+              <div class="event-img">
+                <img src="../img/bg-1-01.png" alt="">
+              </div>
+
+              <div class="event-title">
+                <span> <b>NOMBRE DEL EVENTO</b></span>
+              </div>
+
+              <div class="event-info">
+                <div class="event-info-wrapper">
+
+                  <div class="event-info-date">
+                    <span>- Fecha / - Hora</span> <br>
+                    <span>+ info</span> <br>
+                    <span>+ info</span> <br>
+                    <span>+ info</span> <br>
+                    <span>+ info</span> <br>
+                  </div>
+
+                  <div class="ver-mas event-mas  hvr-shrink">
+                    <span>VER MÁS</span>
+                  </div>
+                </div>
+              </div>
+         </div>
+      <div class="event-elem hvr-box-shadow-outset">
+             <div class="event-img">
+               <img src="../img/bg-1-01.png" alt="">
+             </div>
+
+             <div class="event-title">
+               <span> <b>NOMBRE DEL EVENTO</b></span>
+             </div>
+
+             <div class="event-info">
+               <div class="event-info-wrapper">
+
+                 <div class="event-info-date">
+                   <span>- Fecha / - Hora</span> <br>
+                   <span>+ info</span> <br>
+                   <span>+ info</span> <br>
+                   <span>+ info</span> <br>
+                   <span>+ info</span> <br>
+                 </div>
+
+                 <div class="ver-mas event-mas  hvr-shrink">
                    <span>VER MÁS</span>
                  </div>
                </div>
@@ -186,9 +265,9 @@
         <a href=""><img class="social_icon" src="../img/facebook.svg"/></a>
         <br><br>
 
-        <span>Dirección #234 Col. Providencia</span> <br>
+        <span>Calle Toltecas 3543. Col. Monraz. Guadalajara, Jal.</span> <br>
         <span>Guadalajara, Jal, México C.P. 44069 </span> <br>
-          <span>Tel. <a style="color:white" href="tel:33 44 77 33">33 44 77 33</a> - <a style="color:white" href="tel:33 77 22 88">33 77 22 88</a> </span> <br>
+        <span>Teléfonos consultorio​: <a style="color:white" href="tel:2003​8213">2003​-​8213</a> - <a style="color:white" href="tel:1730​5996">1730​-​5996</a> </span> <br>
         <span>info@therappy.com </span> <br>
       </div>
 
@@ -217,33 +296,35 @@
     var icon=document.querySelector(".nav-icon"),show=!1;icon.onclick=function(){show?($(".mobile-nav").removeClass("fadeInDown"),$(".mobile-nav").addClass("fadeOutUp")):($(".mobile-nav").addClass("is-show"),$(".mobile-nav").addClass("fadeInDown"),$(".mobile-nav").removeClass("fadeOutUp")),show=!show};
   </script>
 
-  <!-- PopUp Events -->
-  <script type="text/javascript">
-    $( ".event-elem,.ver-mas" ).click(function() {
-        $('.popup-events').css( "display", "flex" );
-        $( ".events-content" ).removeClass( "fadeIn" );
-        $( ".events-content" ).addClass( "fadeOut" );
-        $( ".events-content" ).css( "display","none");
-        $( ".popup-events" ).removeClass( "fadeOut" );
-        $( ".popup-events" ).addClass( "fadeIn" );
-        $('html, body').animate({
-            scrollTop: $(".quien-top").offset().top
-        }, 500);
-    });
-    $( ".event-button,.close-lightbox" ).click(function() {
-        $('html, body').animate({
-            scrollTop: $(".quien-top").offset().top
-        }, 300);
-        $( ".popup-events" ).removeClass( "fadeIn" );
-        $( ".popup-events" ).addClass( "fadeOut" );
-          setTimeout(function(){
-          $('.popup-events').css( "display", "none" );
-          $( ".events-content" ).css( "display","block");
-          $( ".events-content" ).addClass( "fadeIn" );
-          $( ".events-content" ).removeClass( "fadeOut" );
-        }, 600);
-    });
-  </script>
+
+    <!-- PopUp Events -->
+    <script type="text/javascript">
+      $( ".event-elem,.ver-mas" ).click(function() {
+          $('.popup-events').css( "display", "flex" );
+          $( ".events-content" ).removeClass( "fadeIn" );
+          $( ".events-content" ).addClass( "fadeOut" );
+          $( ".events-content" ).css( "display","none");
+          $( ".popup-events" ).removeClass( "fadeOut" );
+          $( ".popup-events" ).addClass( "fadeIn" );
+          $('html, body').animate({
+              scrollTop: $(".quien-top").offset().top
+          }, 500);
+      });
+      $( ".event-button,.close-lightbox" ).click(function() {
+          $('html, body').animate({
+              scrollTop: $(".quien-top").offset().top
+          }, 300);
+          $( ".popup-events" ).removeClass( "fadeIn" );
+          $( ".popup-events" ).addClass( "fadeOut" );
+            setTimeout(function(){
+            $('.popup-events').css( "display", "none" );
+            $( ".events-content" ).css( "display","block");
+            $( ".events-content" ).addClass( "fadeIn" );
+            $( ".events-content" ).removeClass( "fadeOut" );
+          }, 600);
+      });
+    </script>
+
 
   </body>
 </html>
