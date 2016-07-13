@@ -60,9 +60,6 @@
         <!-- PopUp Interes -->
         <div class="popup-events animated">
           <div class="popup-events-wrapper">
-            <div class="close-lightbox">
-              <span> X </span>
-            </div>
             <h3><b>Nombre de la nota</b></h3>
 
             <p class="popup-events-content" style="text-align: justify; display:block;">
@@ -112,28 +109,28 @@
                 </div>
            </div>
         <div class="event-elem hvr-box-shadow-outset">
-             <div class="event-img">
-               <img src="../img/bg-1-01.png" alt="">
-             </div>
+               <div class="event-img">
+                 <img src="../img/bg-1-01.png" alt="">
+               </div>
 
-             <div class="event-title">
-               <span> <b>NOMBRE DE LA NOTA</b></span> <br>
-               <span class="dateInfo"><i>8 de Julio del 2016</i></span>
-             </div>
+               <div class="event-title">
+                 <span> <b>NOMBRE DE LA NOTA</b></span> <br>
+                 <span class="dateInfo"><i>8 de Julio del 2016</i></span>
+               </div>
 
-             <div class="event-info">
-               <div class="event-info-wrapper">
+               <div class="event-info">
+                 <div class="event-info-wrapper">
 
-                 <div class="event-info-date">
-                   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</span> <br>
-                 </div>
+                   <div class="event-info-date">
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</span> <br>
+                   </div>
 
-                 <div class="ver-mas event-mas  hvr-shrink">
-                   <span>VER MÁS</span>
+                   <div class="ver-mas event-mas  hvr-shrink">
+                     <span>VER MÁS</span>
+                   </div>
                  </div>
                </div>
-             </div>
-        </div>
+          </div>
         <div class="event-elem hvr-box-shadow-outset">
                 <div class="event-img">
                   <img src="../img/bg-1-01.png" alt="">
@@ -158,29 +155,77 @@
                 </div>
            </div>
         <div class="event-elem hvr-box-shadow-outset">
-             <div class="event-img">
-               <img src="../img/bg-1-01.png" alt="">
-             </div>
+               <div class="event-img">
+                 <img src="../img/bg-1-01.png" alt="">
+               </div>
 
-             <div class="event-title">
-               <span> <b>NOMBRE DE LA NOTA</b></span> <br>
-               <span class="dateInfo"><i>8 de Julio del 2016</i></span>
-             </div>
+               <div class="event-title">
+                 <span> <b>NOMBRE DE LA NOTA</b></span> <br>
+                 <span class="dateInfo"><i>8 de Julio del 2016</i></span>
+               </div>
 
-             <div class="event-info">
-               <div class="event-info-wrapper">
+               <div class="event-info">
+                 <div class="event-info-wrapper">
 
-                 <div class="event-info-date">
-                   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</span> <br>
-                 </div>
+                   <div class="event-info-date">
+                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</span> <br>
+                   </div>
 
-                 <div class="ver-mas event-mas  hvr-shrink">
-                   <span>VER MÁS</span>
+                   <div class="ver-mas event-mas  hvr-shrink">
+                     <span>VER MÁS</span>
+                   </div>
                  </div>
                </div>
-             </div>
-        </div>
+          </div>
+          <div class="event-elem hvr-box-shadow-outset">
+                  <div class="event-img">
+                    <img src="../img/bg-1-01.png" alt="">
+                  </div>
 
+                  <div class="event-title">
+                    <span> <b>NOMBRE DE LA NOTA</b></span> <br>
+                    <span class="dateInfo"><i>8 de Julio del 2016</i></span>
+                  </div>
+
+                  <div class="event-info">
+                    <div class="event-info-wrapper">
+
+                      <div class="event-info-date">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</span> <br>
+                      </div>
+
+                      <div class="ver-mas event-mas  hvr-shrink">
+                        <span>VER MÁS</span>
+                      </div>
+                    </div>
+                  </div>
+             </div>
+          <div class="event-elem hvr-box-shadow-outset">
+                 <div class="event-img">
+                   <img src="../img/bg-1-01.png" alt="">
+                 </div>
+
+                 <div class="event-title">
+                   <span> <b>NOMBRE DE LA NOTA</b></span> <br>
+                   <span class="dateInfo"><i>8 de Julio del 2016</i></span>
+                 </div>
+
+                 <div class="event-info">
+                   <div class="event-info-wrapper">
+
+                     <div class="event-info-date">
+                       <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit,</span> <br>
+                     </div>
+
+                     <div class="ver-mas event-mas  hvr-shrink">
+                       <span>VER MÁS</span>
+                     </div>
+                   </div>
+                 </div>
+            </div>
+
+      </div>
+      <div class="scrollUp"> &#x2191; </div>
     </section>
 
     <!-- Footer -->
@@ -253,6 +298,40 @@
       });
     </script>
 
+    <script type="text/javascript">
+      $('.scrollUp').click(function() {
+        $('html, body').animate({
+            scrollTop: $(".capacitacion").offset().top
+        }, 300);
+      });
+    </script>
+
+    <style media="screen">
+    .scrollUp {
+      width: 50px;
+      height: 50px;
+      font-size: 40px;
+      text-align: center;
+      position: absolute;
+      top: inherit;;
+      left: 5%;
+      z-index: 9;
+      margin: -1vw 0;
+      background: #2fc1c1;
+      color: #fff;
+      border-radius: 11px;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px){
+      .scrollUp{
+        position: fixed;
+        bottom: 2%;
+      }
+    }
+
+    </style>
 
   </body>
 </html>

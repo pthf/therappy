@@ -68,9 +68,6 @@
       <!-- POPUP -->
       <div class="popup-events animated">
         <div class="popup-events-wrapper">
-          <div class="close-lightbox">
-            <span> X </span>
-          </div>
           <h3><b>Nombre del evento</b></h3>
 
           <p class="popup-events-content" style="text-align: justify; display:block;">
@@ -94,7 +91,7 @@
 
     <div class="events-content animated">
 
-      <div class="event-elem hvr-box-shadow-outset">
+      <!-- <div class="event-elem hvr-box-shadow-outset">
               <div class="event-img">
                 <img src="../img/bg-1-01.png" alt="">
               </div>
@@ -120,35 +117,10 @@
                 </div>
               </div>
          </div>
-      <div class="event-elem hvr-box-shadow-outset">
-             <div class="event-img">
-               <img src="../img/bg-1-01.png" alt="">
-             </div>
 
-             <div class="event-title">
-               <span> <b>NOMBRE DEL EVENTO</b></span>
-             </div>
-
-             <div class="event-info">
-               <div class="event-info-wrapper">
-
-                 <div class="event-info-date">
-                   <span>- Fecha / - Hora</span> <br>
-                   <span>+ info</span> <br>
-                   <span>+ info</span> <br>
-                   <span>+ info</span> <br>
-                   <span>+ info</span> <br>
-                 </div>
-
-                 <div class="ver-mas event-mas  hvr-shrink">
-                   <span>VER MÁS</span>
-                 </div>
-               </div>
-             </div>
-        </div>
       <div class="event-elem hvr-box-shadow-outset">
               <div class="event-img">
-                <img src="../img/bg-1-01.png" alt="">
+                <img src="../img/bg-2-01.png" alt="">
               </div>
 
               <div class="event-title">
@@ -172,9 +144,10 @@
                 </div>
               </div>
          </div>
+
       <div class="event-elem hvr-box-shadow-outset">
              <div class="event-img">
-               <img src="../img/bg-1-01.png" alt="">
+               <img src="../img/bg-3-01.png" alt="">
              </div>
 
              <div class="event-title">
@@ -198,59 +171,74 @@
                </div>
              </div>
         </div>
-      <div class="event-elem hvr-box-shadow-outset">
-              <div class="event-img">
-                <img src="../img/bg-1-01.png" alt="">
-              </div>
+        <div class="event-elem hvr-box-shadow-outset">
+                <div class="event-img">
+                  <img src="../img/bg-1-01.png" alt="">
+                </div>
 
-              <div class="event-title">
-                <span> <b>NOMBRE DEL EVENTO</b></span>
-              </div>
+                <div class="event-title">
+                  <span> <b>NOMBRE DEL EVENTO</b></span>
+                </div>
 
-              <div class="event-info">
-                <div class="event-info-wrapper">
+                <div class="event-info">
+                  <div class="event-info-wrapper">
 
-                  <div class="event-info-date">
-                    <span>- Fecha / - Hora</span> <br>
-                    <span>+ info</span> <br>
-                    <span>+ info</span> <br>
-                    <span>+ info</span> <br>
-                    <span>+ info</span> <br>
-                  </div>
+                    <div class="event-info-date">
+                      <span>- Fecha / - Hora</span> <br>
+                      <span>+ info</span> <br>
+                      <span>+ info</span> <br>
+                      <span>+ info</span> <br>
+                      <span>+ info</span> <br>
+                    </div>
 
-                  <div class="ver-mas event-mas  hvr-shrink">
-                    <span>VER MÁS</span>
+                    <div class="ver-mas event-mas  hvr-shrink">
+                      <span>VER MÁS</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-         </div>
-      <div class="event-elem hvr-box-shadow-outset">
-             <div class="event-img">
-               <img src="../img/bg-1-01.png" alt="">
-             </div>
+           </div>
 
-             <div class="event-title">
-               <span> <b>NOMBRE DEL EVENTO</b></span>
-             </div>
+        <div class="event-elem hvr-box-shadow-outset">
+                <div class="event-img">
+                  <img src="../img/bg-2-01.png" alt="">
+                </div>
 
-             <div class="event-info">
-               <div class="event-info-wrapper">
+                <div class="event-title">
+                  <span> <b>NOMBRE DEL EVENTO</b></span>
+                </div>
 
-                 <div class="event-info-date">
-                   <span>- Fecha / - Hora</span> <br>
-                   <span>+ info</span> <br>
-                   <span>+ info</span> <br>
-                   <span>+ info</span> <br>
-                   <span>+ info</span> <br>
-                 </div>
+                <div class="event-info">
+                  <div class="event-info-wrapper">
 
-                 <div class="ver-mas event-mas  hvr-shrink">
-                   <span>VER MÁS</span>
-                 </div>
-               </div>
-             </div>
-        </div>
+                    <div class="event-info-date">
+                      <span>- Fecha / - Hora</span> <br>
+                      <span>+ info</span> <br>
+                      <span>+ info</span> <br>
+                      <span>+ info</span> <br>
+                      <span>+ info</span> <br>
+                    </div>
 
+                    <div class="ver-mas event-mas  hvr-shrink">
+                      <span>VER MÁS</span>
+                    </div>
+                  </div>
+                </div>
+           </div> -->
+
+      <h4 style="color:#aed48a;text-align:center;">PRÓXIMAMENTE!</h4>
+
+    <style media="screen">
+      h4{
+        font-size:60px;
+      }
+      @media (max-width: 640px) {
+        h4{
+          font-size: 36px;
+        }
+      }
+    </style>
+
+      <div class="scrollUp"> &#x2191; </div>
   </section>
 
 
@@ -296,35 +284,68 @@
     var icon=document.querySelector(".nav-icon"),show=!1;icon.onclick=function(){show?($(".mobile-nav").removeClass("fadeInDown"),$(".mobile-nav").addClass("fadeOutUp")):($(".mobile-nav").addClass("is-show"),$(".mobile-nav").addClass("fadeInDown"),$(".mobile-nav").removeClass("fadeOutUp")),show=!show};
   </script>
 
+  <!-- PopUp Events -->
+  <script type="text/javascript">
+    $( ".event-elem,.ver-mas" ).click(function() {
+        $('.popup-events').css( "display", "flex" );
+        $( ".events-content" ).removeClass( "fadeIn" );
+        $( ".events-content" ).addClass( "fadeOut" );
+        $( ".events-content" ).css( "display","none");
+        $( ".popup-events" ).removeClass( "fadeOut" );
+        $( ".popup-events" ).addClass( "fadeIn" );
+        $('html, body').animate({
+            scrollTop: $(".quien-top").offset().top
+        }, 500);
+    });
+    $( ".event-button,.close-lightbox" ).click(function() {
+        $('html, body').animate({
+            scrollTop: $(".quien-top").offset().top
+        }, 300);
+        $( ".popup-events" ).removeClass( "fadeIn" );
+        $( ".popup-events" ).addClass( "fadeOut" );
+          setTimeout(function(){
+          $('.popup-events').css( "display", "none" );
+          $( ".events-content" ).css( "display","block");
+          $( ".events-content" ).addClass( "fadeIn" );
+          $( ".events-content" ).removeClass( "fadeOut" );
+        }, 600);
+    });
+  </script>
 
-    <!-- PopUp Events -->
-    <script type="text/javascript">
-      $( ".event-elem,.ver-mas" ).click(function() {
-          $('.popup-events').css( "display", "flex" );
-          $( ".events-content" ).removeClass( "fadeIn" );
-          $( ".events-content" ).addClass( "fadeOut" );
-          $( ".events-content" ).css( "display","none");
-          $( ".popup-events" ).removeClass( "fadeOut" );
-          $( ".popup-events" ).addClass( "fadeIn" );
-          $('html, body').animate({
-              scrollTop: $(".quien-top").offset().top
-          }, 500);
-      });
-      $( ".event-button,.close-lightbox" ).click(function() {
-          $('html, body').animate({
-              scrollTop: $(".quien-top").offset().top
-          }, 300);
-          $( ".popup-events" ).removeClass( "fadeIn" );
-          $( ".popup-events" ).addClass( "fadeOut" );
-            setTimeout(function(){
-            $('.popup-events').css( "display", "none" );
-            $( ".events-content" ).css( "display","block");
-            $( ".events-content" ).addClass( "fadeIn" );
-            $( ".events-content" ).removeClass( "fadeOut" );
-          }, 600);
-      });
-    </script>
+  <style media="screen">
+  .scrollUp {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    top: inherit;;
+    left: 5%;
+    z-index: 9;
+    margin: -1vw 0;
+    background: #2fc1c1;
+    color: #fff;
+    border-radius: 11px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
 
+  @media (max-width: 768px){
+    .scrollUp{
+      position: fixed;
+      bottom: 2%;
+    }
+  }
+
+  </style>
+
+  <script type="text/javascript">
+    $('.scrollUp').click(function() {
+      $('html, body').animate({
+          scrollTop: $(".quien-top.event-title-top").offset().top
+      }, 300);
+    });
+  </script>
 
   </body>
 </html>
