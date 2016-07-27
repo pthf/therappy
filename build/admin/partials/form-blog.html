@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src='https://cdn.tinymce.com/4/tinymce.min.js'></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+  tinymce.init({
+    selector: '#mytextarea',
+    plugins : 'advlist autolink link image lists charmap print preview'
+  });
+  </script>
+  <script>
+    $('document').ready(function(){
+      $('form').submit(function(e){
+        e.preventDefault();
+        var data = $('textarea', this).val();
+        $('.result').html(data);
+      });
+    });
+  </script>
+</head>
+
+<body>
+<h1>TinyMCE Quick Start Guide</h1>
+  <form method="post">
+    <textarea id="mytextarea">Hello, World!</textarea>
+    <input type="submit" value="test">
+  </form>
+
+  <div class="result"></div>
+</body>
+</html>

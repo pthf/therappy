@@ -1,0 +1,39 @@
+<div ng-controller="getImagesCourseGalleryController">
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>image</th>
+        <th>actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="(key, data) in listImages">
+        <th>{{data.idCourseGallery}}</th>
+        <th>
+          <div style="width: 380px; height: 260px; overflow: hidden;">
+            <img src="../src/images/courseGallery/{{data.imageCourseGallery}}" width="100%;" height="auto;">
+          </div>
+        </th>
+        <th>
+		  		<span class="label label-danger deleteImageCourse" data-id='{{data.idCourseGallery}}' style="cursor:pointer">Delete</span>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <div class="col-md-12">
+  </div><br><br>
+  <div class="col-md-5">
+    <form class="form-horizontal" enctype="multipart/form-data" id="setImageForm">
+      <div class="form-group">
+        <label for="setImage" class="col-sm-12 control-label" style="text-align: left;">Insert Images *</label>
+        <div class="col-sm-12">
+          <input required type="file" multiple class="form-control" id="setImage" name="setImage[]"></input>
+          <input type="submit" class="btn btn-default" value="Add"  name="" style="margin-top: 10px;"></input>
+          <input type="text" style="display:none"></input>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
