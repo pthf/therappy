@@ -91,7 +91,7 @@
 
     <div class="events-content animated">
 
-      <!-- <div class="event-elem hvr-box-shadow-outset">
+      <div class="event-elem hvr-box-shadow-outset">
               <div class="event-img">
                 <img src="../img/bg-1-01.png" alt="">
               </div>
@@ -223,20 +223,8 @@
                     </div>
                   </div>
                 </div>
-           </div> -->
+           </div>
 
-      <h4 style="color:#aed48a;text-align:center;">PRÓXIMAMENTE!</h4>
-
-    <style media="screen">
-      h4{
-        font-size:60px;
-      }
-      @media (max-width: 640px) {
-        h4{
-          font-size: 36px;
-        }
-      }
-    </style>
 
       <div class="scrollUp"> &#x2191; </div>
   </section>
